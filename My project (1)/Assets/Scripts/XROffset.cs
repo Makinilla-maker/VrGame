@@ -17,6 +17,7 @@ public class XROffset : XRGrabInteractable
         }
         initialAttachLocalPos = attachTransform.localPosition;
         initialAttachLocalRot = attachTransform.localRotation;
+
     }
 
     protected override void OnSelectEntered(XRBaseInteractor interactor)
