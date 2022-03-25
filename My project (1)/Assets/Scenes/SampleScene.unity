@@ -976,7 +976,7 @@ MonoBehaviour:
   m_HapticSelectCancelDuration: 0
   m_PlayHapticsOnHoverEntered: 1
   m_HapticHoverEnterIntensity: 0.1
-  m_HapticHoverEnterDuration: 0.1
+  m_HapticHoverEnterDuration: 0.05
   m_PlayHapticsOnHoverExited: 0
   m_HapticHoverExitIntensity: 0
   m_HapticHoverExitDuration: 0
@@ -2849,7 +2849,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1728657560
 MonoBehaviour:
@@ -3906,10 +3906,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 23717079706166208}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -4127,10 +4127,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 55469898347290897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -4292,10 +4292,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 77642015401123876}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -4773,10 +4773,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 254361864203457133}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -4842,7 +4842,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 107959540}
+  m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
   m_MovementType: 2
   m_VelocityDamping: 1
@@ -5473,10 +5473,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 514577438951080905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -5794,10 +5794,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 605906101131720043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -6094,10 +6094,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 766360737985366931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -6289,10 +6289,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 805231281062890739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -6532,10 +6532,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 928596824429275906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -6920,10 +6920,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1038236619903908922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -7323,10 +7323,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1248106932361144168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -7502,10 +7502,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1288700976069336705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -7725,10 +7725,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1329217097047392205}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -8022,21 +8022,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1482629748619455425}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1777971742}
-  m_Colliders:
-  - {fileID: 1431671596399764725}
-  - {fileID: 6954755956126897793}
-  - {fileID: 7826879000738551670}
-  - {fileID: 324336767224724194}
-  - {fileID: 983326433771292403}
-  - {fileID: 8187108822091823728}
-  - {fileID: 7049665596551738869}
-  - {fileID: 7298322580905211140}
-  - {fileID: 8921625323313093561}
-  - {fileID: 3092593805273438353}
+  m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -8101,7 +8091,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 8557124569783086448}
+  m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
   m_MovementType: 2
   m_VelocityDamping: 1
@@ -8184,10 +8174,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1522115276944805156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -8414,10 +8404,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1556443949252142987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -8702,10 +8692,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1674303208009083384}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -8881,10 +8871,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1688991089668498139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -9433,10 +9423,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2038328715095194563}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -10097,10 +10087,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2619217706919541591}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -10513,10 +10503,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2911926436236824451}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -10710,10 +10700,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2919859668444959147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -10889,10 +10879,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2954129860440431731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -11139,10 +11129,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2981181734086904335}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -11305,10 +11295,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2993154163143034182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -11484,10 +11474,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3000362358207090182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -11762,10 +11752,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3096152626743925878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -11935,10 +11925,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3135180334729533096}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -12142,10 +12132,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3192032961102733263}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -12315,10 +12305,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3240340070496685118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -12701,10 +12691,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3454460133027710878}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -12866,10 +12856,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3455576585708505912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -13516,10 +13506,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3848349898661855799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -14121,10 +14111,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4161987524572615322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -14926,10 +14916,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4393441490689123664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -15270,10 +15260,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4446349617287337681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -15527,10 +15517,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4550089456101244043}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -15730,10 +15720,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4692404962672633140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -15895,10 +15885,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4717878865844630806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -16411,10 +16401,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4942405905183367277}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -16576,10 +16566,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4945853576738333582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -16824,10 +16814,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5049206607903323016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -16989,10 +16979,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5061913010424243041}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -17469,10 +17459,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5269952141918379673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -18214,7 +18204,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5844814371561939560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1777971742}
@@ -18394,10 +18384,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5855861209669062968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -18559,10 +18549,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5860617535745537911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -18986,10 +18976,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6017276908345375811}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -19515,10 +19505,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6081087051206610733}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -19680,10 +19670,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6092372997788421408}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -19998,10 +19988,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6256342783649811389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -20392,10 +20382,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6405213346148561068}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -21036,10 +21026,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6761170323222003064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -21237,10 +21227,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6837779785515992769}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -21436,10 +21426,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6887546357491878224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -21601,10 +21591,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6901010611674732801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -21843,10 +21833,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6973065186824225778}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -22175,10 +22165,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6981643413179545822}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -22455,10 +22445,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7153364394831868264}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -22650,10 +22640,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7225140696903504503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -23559,10 +23549,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7703832924339524510}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -23915,10 +23905,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7867919954137700705}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -24215,10 +24205,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7952143035248457252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -24728,10 +24718,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8325842717706774155}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -24937,10 +24927,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8343701978719932158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -25222,10 +25212,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8544208573105306506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -25514,10 +25504,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8676264435749842797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -25839,10 +25829,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8758248702023820989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -26163,10 +26153,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8844117912269078590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -26381,10 +26371,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8868991338922020804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -26586,10 +26576,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8900183758687809134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
@@ -26823,7 +26813,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8936594504596067789}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1777971742}
@@ -26892,7 +26882,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 5219603944476340529}
+  m_AttachTransform: {fileID: 0}
   m_AttachEaseInTime: 0.15
   m_MovementType: 2
   m_VelocityDamping: 1
@@ -27127,10 +27117,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9090590170036332823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
