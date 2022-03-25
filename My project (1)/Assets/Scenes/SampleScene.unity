@@ -14328,10 +14328,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4177264278383199968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 1777971742}
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
