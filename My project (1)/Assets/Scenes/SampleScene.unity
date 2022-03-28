@@ -892,11 +892,13 @@ MonoBehaviour:
       m_Calls: []
   m_ShowInteractableHoverMeshes: 1
   m_InteractableHoverMeshMaterial: {fileID: 0}
-  m_InteractableCantHoverMeshMaterial: {fileID: 0}
+  m_InteractableCantHoverMeshMaterial: {fileID: 2100000, guid: 1948d76e420ef734c906d16b6561bf83,
+    type: 2}
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
   targetTag: Magazine
+  realoaded: 0
 --- !u!135 &527934679
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10809,7 +10811,7 @@ GameObject:
   - component: {fileID: 2038328715095194564}
   m_Layer: 0
   m_Name: 90's bedroom.071
-  m_TagString: Untagged
+  m_TagString: Magazine
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26818,8 +26820,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8572362473677218863}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.829, y: 0.8645, z: 3.198}
+  m_LocalRotation: {x: -0, y: -0, z: -0.68517584, w: 0.72837776}
+  m_LocalPosition: {x: 0.81, y: 0.754, z: 3.3239}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 921090568418462186}
@@ -26829,7 +26831,7 @@ Transform:
   - {fileID: 788050658}
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -86.499}
 --- !u!1 &8571581808870140463
 GameObject:
   m_ObjectHideFlags: 0
