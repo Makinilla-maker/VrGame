@@ -1,0 +1,54 @@
+{
+    "name": "PlayerInput",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "4d2c2f37-d348-40dc-a075-5fc6b970d4e3",
+            "actions": [
+                {
+                    "name": "Reload",
+                    "type": "Button",
+                    "id": "54b08f9c-3a46-4486-a1fb-cba251c7060b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Shoot",
+                    "type": "Button",
+                    "id": "a8e7892e-12d8-477d-b676-2c4adb6bb9a3",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "fee75c8e-07e4-4523-808b-3cb411dc5347",
+                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reload",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "46c119d3-ca13-4f02-982c-4cee903e1f0f",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
