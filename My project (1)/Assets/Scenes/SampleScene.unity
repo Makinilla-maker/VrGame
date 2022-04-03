@@ -778,6 +778,99 @@ Transform:
   m_Father: {fileID: 1390739234}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &511713671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511713672}
+  - component: {fileID: 511713673}
+  m_Layer: 0
+  m_Name: Point Light (2)
+  m_TagString: Light
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511713672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511713671}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.417, y: 1.577, z: 4.716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1563313815}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &511713673
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511713671}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10.35
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &512599874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1481,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 704280656}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpawnPhoto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3630,6 +3723,7 @@ Transform:
   - {fileID: 2107572718}
   - {fileID: 1510230997}
   - {fileID: 221631928}
+  - {fileID: 511713672}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4761,7 +4855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2042184773}
   - component: {fileID: 2042184774}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ViewFinder_camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5029,7 +5123,7 @@ GameObject:
   - component: {fileID: 2104422190}
   - component: {fileID: 2104422189}
   - component: {fileID: 2104422188}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Camera_Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5061,7 +5155,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2104422189
@@ -9830,9 +9924,9 @@ GameObject:
   - component: {fileID: 1555997112815141059}
   - component: {fileID: 3874896044683282618}
   - component: {fileID: 5871898792205503431}
-  - component: {fileID: 1329217097047392208}
   - component: {fileID: 1329217097047392207}
   - component: {fileID: 1329217097047392206}
+  - component: {fileID: 1329217097047392208}
   m_Layer: 0
   m_Name: 90's bedroom.016
   m_TagString: Untagged
@@ -9971,8 +10065,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1329217097047392208
-BoxCollider:
+--- !u!64 &1329217097047392208
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -9981,9 +10075,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0017919992, y: 0.00241492, z: 0.00048419953}
-  m_Center: {x: -0.00036201355, y: -0.0000000028521754, z: 0.0000000025320332}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -131740078022872697, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!33 &1363836184882886033
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -10321,9 +10416,9 @@ GameObject:
   - component: {fileID: 6423801303298134016}
   - component: {fileID: 5025706797945694503}
   - component: {fileID: 8070804865813434592}
-  - component: {fileID: 1522115276944805159}
   - component: {fileID: 1522115276944805158}
   - component: {fileID: 1522115276944805157}
+  - component: {fileID: 1522115276944805159}
   m_Layer: 0
   m_Name: 90's bedroom.017
   m_TagString: Untagged
@@ -10462,8 +10557,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1522115276944805159
-BoxCollider:
+--- !u!64 &1522115276944805159
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10472,9 +10567,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0021056007, y: 0.0026772697, z: 0.00043199895}
-  m_Center: {x: -0.00042533275, y: -4.656613e-10, z: -0.00000003039895}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 116325497119127226, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!33 &1528094270484146151
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -13988,9 +14084,9 @@ GameObject:
   - component: {fileID: 1698700727525588507}
   - component: {fileID: 3735236601554185761}
   - component: {fileID: 8687645314411303533}
-  - component: {fileID: 3096152626743925881}
   - component: {fileID: 3096152626743925880}
   - component: {fileID: 3096152626743925879}
+  - component: {fileID: 3096152626743925881}
   m_Layer: 0
   m_Name: 90's bedroom.018
   m_TagString: Untagged
@@ -14129,8 +14225,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &3096152626743925881
-BoxCollider:
+--- !u!64 &3096152626743925881
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14139,9 +14235,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0019488, y: 0.0029094801, z: 0.0007131994}
-  m_Center: {x: -0.00039367675, y: 1.7462298e-10, z: 0.000000017287675}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2012895058241099762, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!33 &3117489408235924443
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18866,11 +18963,11 @@ GameObject:
   - component: {fileID: 7463692993516989818}
   - component: {fileID: 8888641926995287396}
   - component: {fileID: 1971854824082086583}
-  - component: {fileID: 4945853576738333585}
   - component: {fileID: 4945853576738333584}
-  - component: {fileID: 4945853576738333583}
   - component: {fileID: 4945853576738333586}
-  m_Layer: 0
+  - component: {fileID: 4945853576738333585}
+  - component: {fileID: 4945853576738333583}
+  m_Layer: 7
   m_Name: 90's bedroom.046
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18886,7 +18983,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4945853576738333582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3fa92d5336f4f4892b6ea0df5cb4cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 80991f89e7e10dd43977ca801b066c0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1777971742}
@@ -19044,8 +19141,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4945853576738333585
-BoxCollider:
+--- !u!64 &4945853576738333585
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19054,9 +19151,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0011407995, y: 0.0007099998, z: 0.0011543012}
-  m_Center: {x: -0.00007297995, y: -0.00009312782, z: 0.00007629275}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6776370720181044039, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!114 &4945853576738333586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21529,9 +21627,9 @@ GameObject:
   - component: {fileID: 2926536487892826517}
   - component: {fileID: 2059259187219957945}
   - component: {fileID: 2889056301593372931}
-  - component: {fileID: 6017276908345375814}
   - component: {fileID: 6017276908345375813}
   - component: {fileID: 6017276908345375812}
+  - component: {fileID: 6017276908345375814}
   m_Layer: 0
   m_Name: 90's bedroom.015
   m_TagString: Untagged
@@ -21670,8 +21768,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6017276908345375814
-BoxCollider:
+--- !u!64 &6017276908345375814
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -21680,9 +21778,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0016351985, y: 0.0023659603, z: 0.0006023991}
-  m_Center: {x: -0.00033029504, y: 4.0745363e-10, z: -0.000000040090526}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5389446741121747919, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!23 &6017285419513777126
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22975,9 +23074,9 @@ GameObject:
   - component: {fileID: 7109267975501909952}
   - component: {fileID: 2640889059026731826}
   - component: {fileID: 2962181386168003684}
-  - component: {fileID: 6405213346148561071}
   - component: {fileID: 6405213346148561070}
   - component: {fileID: 6405213346148561069}
+  - component: {fileID: 6405213346148561071}
   m_Layer: 0
   m_Name: 90's bedroom.013
   m_TagString: Untagged
@@ -23116,8 +23215,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6405213346148561071
-BoxCollider:
+--- !u!64 &6405213346148561071
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23126,9 +23225,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0013888001, y: 0.0020197798, z: 0.0003744006}
-  m_Center: {x: -0.00028054358, y: -7.566996e-10, z: 0.00000001549779}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4437196431394919015, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!4 &6412398251659790173
 Transform:
   m_ObjectHideFlags: 0
@@ -24192,9 +24292,9 @@ GameObject:
   - component: {fileID: 234867433205506617}
   - component: {fileID: 5712822003091123829}
   - component: {fileID: 8697198973544323254}
-  - component: {fileID: 6901010611674732804}
   - component: {fileID: 6901010611674732803}
   - component: {fileID: 6901010611674732802}
+  - component: {fileID: 6901010611674732804}
   m_Layer: 0
   m_Name: 90's bedroom.019
   m_TagString: Untagged
@@ -24333,8 +24433,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6901010611674732804
-BoxCollider:
+--- !u!64 &6901010611674732804
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -24343,9 +24443,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0022399996, y: 0.00301438, z: 0.0005562997}
-  m_Center: {x: -0.00045251366, y: -7.566996e-10, z: 0.00000001549779}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3847447738655754859, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!33 &6915847306483780550
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28282,9 +28383,9 @@ GameObject:
   - component: {fileID: 2827415400566099129}
   - component: {fileID: 448184118994938143}
   - component: {fileID: 6596102005700913692}
-  - component: {fileID: 8676264435749842800}
   - component: {fileID: 8676264435749842799}
   - component: {fileID: 8676264435749842798}
+  - component: {fileID: 8676264435749842800}
   m_Layer: 0
   m_Name: 90's bedroom.014
   m_TagString: Untagged
@@ -28423,8 +28524,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &8676264435749842800
-BoxCollider:
+--- !u!64 &8676264435749842800
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -28433,9 +28534,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0016059994, y: 0.0022887602, z: 0.00039789913}
-  m_Center: {x: -0.0003244083, y: 0.0000000016298145, z: 0.000000001193257}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1520813560426172472, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!4 &8686992076140083433
 Transform:
   m_ObjectHideFlags: 0
@@ -29163,9 +29265,9 @@ GameObject:
   - component: {fileID: 8142391963006382741}
   - component: {fileID: 3359626441987867975}
   - component: {fileID: 6577312690465838294}
-  - component: {fileID: 8868991338922020807}
   - component: {fileID: 8868991338922020806}
   - component: {fileID: 8868991338922020805}
+  - component: {fileID: 8868991338922020807}
   m_Layer: 0
   m_Name: 90's bedroom.020
   m_TagString: Untagged
@@ -29304,8 +29406,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &8868991338922020807
-BoxCollider:
+--- !u!64 &8868991338922020807
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -29314,9 +29416,10 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0022399998, y: 0.00302345, z: 0.00065999985}
-  m_Center: {x: -0.00045250176, y: 0.0000000024447218, z: -0.00000002264278}
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6621199516122316856, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
 --- !u!1 &8883388779933932280
 GameObject:
   m_ObjectHideFlags: 0
