@@ -28,7 +28,7 @@
                 {
                     "name": "",
                     "id": "fee75c8e-07e4-4523-808b-3cb411dc5347",
-                    "path": "<OculusTouchController>{RightHand}/secondaryButton",
+                    "path": "<Keyboard>/anyKey",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

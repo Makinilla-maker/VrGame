@@ -709,6 +709,7 @@ MonoBehaviour:
     type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: 3dd9cf2e209c504448f1c4c6835675cf,
     type: 3}
+  totalBullets: 0
   gunAnimator: {fileID: 7931135121319849403}
   barrelLocation: {fileID: 8574493023249370531}
   casingExitLocation: {fileID: 8574721986940354391}
@@ -1735,9 +1736,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5989734870377917182}
-        m_TargetAssemblyTypeName: GunAnimation, Assembly-CSharp
-        m_MethodName: Reload
+      - m_Target: {fileID: 5989734870377917184}
+        m_TargetAssemblyTypeName: SimpleShoot, Assembly-CSharp
+        m_MethodName: Shoot
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21506,12 +21507,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6804990658058999119, guid: 65c9f6563c561ee4e8905d1e6a32548b,
+  bulletPrefab: {fileID: 8862271303531892484, guid: 7ee5790df84451d42bb29a7ae8f28b9d,
     type: 3}
-  casingPrefab: {fileID: 4362657251999731927, guid: 4cb20e8abae957146a8b78e670d3fe74,
+  casingPrefab: {fileID: 8862271303531892484, guid: 7ee5790df84451d42bb29a7ae8f28b9d,
     type: 3}
   muzzleFlashPrefab: {fileID: 1782395880954752, guid: 3dd9cf2e209c504448f1c4c6835675cf,
     type: 3}
+  totalBullets: 0
   gunAnimator: {fileID: 5989734870377917181}
   barrelLocation: {fileID: 907492720}
   casingExitLocation: {fileID: 1511008567}
