@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Light
   - Magazine
+  - Bullet
   layers:
   - Default
   - TransparentFX

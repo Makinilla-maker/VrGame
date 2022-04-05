@@ -39,7 +39,7 @@
                 {
                     "name": "",
                     "id": "46c119d3-ca13-4f02-982c-4cee903e1f0f",
-                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "path": "<Keyboard>/anyKey",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

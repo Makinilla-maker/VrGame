@@ -8,6 +8,8 @@ public class BulletScript : MonoBehaviour
     public float destroyTime;
     private float destroyTime1;
     private bool startCount;
+    private Vector3 colPos;
+    private Quaternion colQuat;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,8 @@ public class BulletScript : MonoBehaviour
     {
         if(startCount)
         {
+            transform.position = colPos;
+            transform.rotation = colQuat;
             if(destroyTime > 0)
             {
                 destroyTime -= Time.deltaTime;
@@ -33,7 +37,11 @@ public class BulletScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        transform.position = rb.transform.position;
-        startCount = true;
+        if(other.transform.tag == "Bullet")
+        {
+            colPos = rb.transform.position;
+            colQuat = rb.transform.rotation;
+            startCount = true;
+        }              
     }
 }

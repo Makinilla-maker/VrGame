@@ -1715,7 +1715,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725581697}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
@@ -1751,19 +1751,7 @@ MonoBehaviour:
     m_ActionId: 54b08f9c-3a46-4486-a1fb-cba251c7060b
     m_ActionName: Player/Shoot[/Keyboard/a]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5989734870377917184}
-        m_TargetAssemblyTypeName: SimpleShoot, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: a8e7892e-12d8-477d-b676-2c4adb6bb9a3
     m_ActionName: Player/Shoot
   m_NeverAutoSwitchControlSchemes: 0
@@ -21507,13 +21495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6be84e4d7829855419c06b94e56bd135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8862271303531892484, guid: 7ee5790df84451d42bb29a7ae8f28b9d,
+  bulletPrefab: {fileID: 8781674092110399504, guid: 7ee5790df84451d42bb29a7ae8f28b9d,
     type: 3}
   casingPrefab: {fileID: 8862271303531892484, guid: 7ee5790df84451d42bb29a7ae8f28b9d,
     type: 3}
-  muzzleFlashPrefab: {fileID: 1782395880954752, guid: 3dd9cf2e209c504448f1c4c6835675cf,
-    type: 3}
-  totalBullets: 0
+  muzzleFlashPrefab: {fileID: 0}
+  totalBullets: 6
   gunAnimator: {fileID: 5989734870377917181}
   barrelLocation: {fileID: 907492720}
   casingExitLocation: {fileID: 1511008567}
