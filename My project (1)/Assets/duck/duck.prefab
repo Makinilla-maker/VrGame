@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1403808014539025105}
   - component: {fileID: 1093302435464121682}
   - component: {fileID: 3683071844007663949}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,10 @@ GameObject:
   - component: {fileID: 7525799796054114660}
   - component: {fileID: 7525799796054114661}
   - component: {fileID: 7525799796054114663}
-  m_Layer: 0
+  - component: {fileID: 7201932322647907055}
+  - component: {fileID: 1051979932489829576}
+  - component: {fileID: 4245155341959914090}
+  m_Layer: 7
   m_Name: duck
   m_TagString: Magazine
   m_Icon: {fileID: 0}
@@ -109,7 +112,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7525799796054114662}
-  m_LocalRotation: {x: -0, y: 0.95545167, z: -0, w: 0.2951476}
+  m_LocalRotation: {x: 0, y: 0.95545113, z: 0, w: 0.29514942}
   m_LocalPosition: {x: -0.64648, y: 0.95, z: 6.1087}
   m_LocalScale: {x: 0.025146145, y: 0.025146145, z: 0.025146145}
   m_Children:
@@ -261,3 +264,42 @@ MonoBehaviour:
   m_ForceGravityOnDetach: 0
   m_RetainTransformParent: 1
   m_AttachPointCompatibilityMode: 0
+--- !u!114 &7201932322647907055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525799796054114662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc852aa5f7199a46ae202a9f1ecfdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck: 0
+--- !u!65 &1051979932489829576
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525799796054114662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.17, y: 2.93, z: 3.9}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4245155341959914090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7525799796054114662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e05fa960c551d9d43b9b091512070422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 10
