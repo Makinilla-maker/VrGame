@@ -23,8 +23,8 @@ public class BulletScript : MonoBehaviour
     {
         if(startCount)
         {
-            transform.position = colPos;
-            transform.rotation = colQuat;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
+            rb.useGravity = false;
             if(destroyTime > 0)
             {
                 destroyTime -= Time.deltaTime;
@@ -37,11 +37,11 @@ public class BulletScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if(other.transform.tag == "Bullet")
+        if(other.transform.tag != "Bullet" && other.gameObject.name != "Gun")
         {
-            colPos = rb.transform.position;
-            colQuat = rb.transform.rotation;
+            rb.constraints = RigidbodyConstraints.FreezeAll;
             startCount = true;
         }              
     }
+    
 }

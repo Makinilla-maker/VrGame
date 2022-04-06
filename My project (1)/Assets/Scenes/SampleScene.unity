@@ -19374,7 +19374,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e35d2ba11d88da84bb0fbf4c4af0ed8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  photoPrefab: {fileID: 7690983906639323328, guid: 169c4226425ffdf4bbae5ce36c52a325,
+  photoPrefab: {fileID: 7690983906639323328, guid: cfade3acd3fa0074095c5080a23e7943,
     type: 3}
   screenRenderer: {fileID: 2104422189}
   spawnLocation: {fileID: 704280656}
@@ -26170,7 +26170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4945853576738333582}
   m_LocalRotation: {x: 0.00000007996555, y: -0.19069083, z: -0.000000015533741, w: 0.9816502}
-  m_LocalPosition: {x: -3.853, y: 0.9303, z: 2.034}
+  m_LocalPosition: {x: -1.035, y: 0.93, z: 0.682}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 704280656}

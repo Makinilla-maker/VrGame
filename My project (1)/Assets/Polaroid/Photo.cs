@@ -17,13 +17,14 @@ public class Photo : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(EjectOverSeconds(1.5f));
+        StartCoroutine(EjectOverSeconds(.5f));
+        currentCollider.enabled = true;
     }
 
     public IEnumerator EjectOverSeconds(float seconds)
     {
-       // applyPhysics.DisablePhysics();
-        currentCollider.enabled = false;
+       //applyPhysics.DisablePhysics();
+        //currentCollider.enabled = false;
 
         float elapsedTime = 0;
         while (elapsedTime < seconds)
