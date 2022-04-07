@@ -7,9 +7,11 @@ public class SimpleShoot : MonoBehaviour
 {
     [Header("Prefab Refrences")]
     public GameObject bulletPrefab;
+    public GameObject patitoPrefab;
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
 
+    [Header("Bullets Section")]
     public int totalBullets;
     private int shootedBullets = 0;
 
@@ -25,6 +27,7 @@ public class SimpleShoot : MonoBehaviour
 
     public AudioSource source;
     public AudioClip fireSound;
+    public GameObject duck;
     void Start()
     {
         if (barrelLocation == null)
@@ -62,12 +65,13 @@ public class SimpleShoot : MonoBehaviour
             //Destroy(tempFlash, destroyTimer);
             }
 
-        //cancels if there's no bullet prefeb
-        if (!bulletPrefab)
-        { return; }
+            //cancels if there's no bullet prefeb
+            if (!bulletPrefab)
+            { return; }
 
-        // Create a bullet and add force on it in direction of the barrel
-            Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+            // Create a bullet and add force on it in direction of the barrel
+            if(!duck.GetComponent<IsDuckConected>().duck)   Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+            else    Instantiate(patitoPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
             shootedBullets++;
         }
     }

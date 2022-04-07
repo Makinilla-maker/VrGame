@@ -10,8 +10,16 @@ public class XrSocketInteractorTag : XRSocketInteractor
 
     public override bool CanSelect(XRBaseInteractable interactable)
     {
-        if(!realoaded) return base.CanSelect(interactable) && interactable.CompareTag(targetTag);
-        else return false;
+        if(!realoaded) 
+        {
+            //realoaded = true;
+            return base.CanSelect(interactable) && interactable.CompareTag(targetTag);
+        }
+        else
+        {
+            return false;
+        } 
+            
     }
     
 }
