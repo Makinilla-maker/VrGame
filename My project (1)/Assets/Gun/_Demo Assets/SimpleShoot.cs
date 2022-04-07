@@ -7,6 +7,7 @@ public class SimpleShoot : MonoBehaviour
 {
     [Header("Prefab Refrences")]
     public GameObject bulletPrefab;
+    public GameObject fakeBulletPrefab;
     public GameObject patitoPrefab;
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
@@ -27,6 +28,10 @@ public class SimpleShoot : MonoBehaviour
 
     public AudioSource source;
     public AudioClip fireSound;
+
+    public List<GameObject> bulletsInScene = new List<GameObject>();
+    public List<GameObject> bulletSocket = new List<GameObject>();
+    public Animation reloadAnimation;
     public GameObject duck;
     void Start()
     {
@@ -35,6 +40,12 @@ public class SimpleShoot : MonoBehaviour
 
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
+
+            for(int i = 0; i < 6; i++)
+            {
+                bulletsInScene.Add(bulletPrefab);
+                Instantiate(fakeBulletPrefab, bulletSocket[i].transform.position, bulletSocket[i].transform.rotation, bulletSocket[i].transform);
+            }
     }
 
     public void PullTheTrigger()
@@ -42,14 +53,14 @@ public class SimpleShoot : MonoBehaviour
         gunAnimator.SetTrigger("Fire");
     }
 
-
+    
     //This function creates the bullet behavior
     public void Shoot()
     {
-        if(shootedBullets == totalBullets)
+        if(shootedBullets == totalBullets-1)
         {
-            Debug.Log("Must Reload!");
-            shootedBullets = 0;
+            gunAnimator.SetBool("reload", true);
+            gunAnimator.SetBool("reloaded", false);
         }
         if(shootedBullets<totalBullets)
         {
@@ -70,12 +81,19 @@ public class SimpleShoot : MonoBehaviour
             { return; }
 
             // Create a bullet and add force on it in direction of the barrel
-            if(!duck.GetComponent<IsDuckConected>().duck)   Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+            if(!duck.GetComponent<IsDuckConected>().duck)
+            {
+
+            }
             else    Instantiate(patitoPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
             shootedBullets++;
         }
     }
 
+    public void Reload()
+    {
+        Debug.Log("Reloading");
+    }
     //This function creates a casing at the ejection slot
     void CasingRelease()
     {

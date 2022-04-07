@@ -18,11 +18,11 @@ public class ObjectDetection : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Controller")    droppedItemsList.Add(other.gameObject);
+        if(other.gameObject.tag != "Controller")    droppedItemsList.Add(other.gameObject);
     }
     private void OnTriggerStay(Collider other)
     {
         Debug.Log(other.name);
-        if(other.gameObject.tag == "Controller")    other.gameObject.SetActive(false);
+        if(other.gameObject.tag != "Controller")    other.gameObject.SetActive(false);
     }
 }

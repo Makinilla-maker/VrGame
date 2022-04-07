@@ -5,8 +5,6 @@ using UnityEngine;
 public class BulletScript : MonoBehaviour
 {
     private Rigidbody rb;
-    public float destroyTime;
-    private float destroyTime1;
     private bool startCount;
     private Vector3 colPos;
     private Quaternion colQuat;
@@ -14,7 +12,6 @@ public class BulletScript : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        destroyTime1 = destroyTime;
         startCount = false;
     }
 
@@ -25,14 +22,11 @@ public class BulletScript : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints.FreezeAll;
             rb.useGravity = false;
-            if(destroyTime > 0)
-            {
-                destroyTime -= Time.deltaTime;
-            }
-            else
-            {
-                Destroy(this.gameObject);
-            }
+        }
+        else
+        {
+            rb.constraints = RigidbodyConstraints.None;
+            rb.useGravity = true;
         }
     }
     private void OnCollisionEnter(Collision other)
@@ -42,6 +36,13 @@ public class BulletScript : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeAll;
             startCount = true;
         }              
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Controller")
+        {
+            startCount = false;
+        }
     }
     
 }

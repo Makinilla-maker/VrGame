@@ -9,6 +9,7 @@ TagManager:
   - Bullet
   - Controller
   - GunSphere
+  - MagazineCol
   layers:
   - Default
   - TransparentFX
