@@ -2444,6 +2444,7 @@ GameObject:
   - component: {fileID: 963194229}
   - component: {fileID: 963194231}
   - component: {fileID: 963194230}
+  - component: {fileID: 963194232}
   m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2549,7 +2550,7 @@ MonoBehaviour:
   sharedProfile: {fileID: 11400000, guid: 11c5769b733014f458c6c86a10e5613f, type: 2}
   isGlobal: 1
   blendDistance: 0
-  weight: 0.584
+  weight: 1
   priority: 0
 --- !u!114 &963194231
 MonoBehaviour:
@@ -2569,7 +2570,7 @@ MonoBehaviour:
     m_Bits: 512
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
-  antialiasingMode: 0
+  antialiasingMode: 1
   temporalAntialiasing:
     jitterSpread: 0.75
     sharpness: 0.25
@@ -2578,7 +2579,7 @@ MonoBehaviour:
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
-    fastMode: 0
+    fastMode: 1
     keepAlpha: 0
   fog:
     enabled: 1
@@ -2611,6 +2612,22 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!114 &963194232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b1855766a4649448c8b445eb1dcee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1725982592}
+  fadeEnabled: 1
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  layerMask: 10
 --- !u!1 &969914087
 GameObject:
   m_ObjectHideFlags: 0
@@ -3303,7 +3320,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b8d1700f4fff4f409cbc0d5b579d9da, type: 2}
+  - {fileID: 2100000, guid: ba382ab5be10bf04d865fff10173b533, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8137,12 +8154,12 @@ MeshRenderer:
   - {fileID: -6875638759547319861, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: -8777720783005967693, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: -7030463765700690022, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
-  - {fileID: -7757176666337590231, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
+  - {fileID: 2100000, guid: ba382ab5be10bf04d865fff10173b533, type: 2}
   - {fileID: 1758467118311971429, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: -5126711458514248187, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: 3157000153791840903, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: 6244096071390648387, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
-  - {fileID: 3290528242404020370, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
+  - {fileID: 2100000, guid: 91d86ef6d62bf74498e6c36b9edcd696, type: 2}
   - {fileID: 4013931493283949165, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -13472,13 +13489,30 @@ GameObject:
   - component: {fileID: 147312772514758997}
   - component: {fileID: 6017285419513777126}
   - component: {fileID: 2302141594911845161}
-  m_Layer: 0
+  - component: {fileID: 2302141594911845158}
+  m_Layer: 6
   m_Name: 90's bedroom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
+--- !u!54 &2302141594911845158
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2302141594911845157}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 1
 --- !u!64 &2302141594911845161
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13567,7 +13601,7 @@ GameObject:
   - component: {fileID: 9173561043836912362}
   - component: {fileID: 3385930299963309575}
   - component: {fileID: 2490995331329933736}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14377,7 +14411,7 @@ GameObject:
   - component: {fileID: 8857084894318813794}
   - component: {fileID: 4077750503501133094}
   - component: {fileID: 2918259117142592899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: 90's bedroom.067
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24108,7 +24142,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -3025988501570128384, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
-  - {fileID: 1758467118311971429, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
+  - {fileID: 2100000, guid: 89d05401acacf934b85fbad4f6096c6e, type: 2}
   - {fileID: 3157000153791840903, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: -4025422536719589973, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   m_StaticBatchInfo:
@@ -27037,7 +27071,7 @@ MeshRenderer:
   - {fileID: -5130112658666260250, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: 7901733086826607823, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
   - {fileID: -8777720783005967693, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
-  - {fileID: 3290528242404020370, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
+  - {fileID: 2100000, guid: 91d86ef6d62bf74498e6c36b9edcd696, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
