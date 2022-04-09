@@ -28,6 +28,7 @@ public class BulletScript : MonoBehaviour
             rb.constraints = RigidbodyConstraints.None;
             rb.useGravity = true;
         }
+        
     }
     private void OnCollisionEnter(Collision other)
     {

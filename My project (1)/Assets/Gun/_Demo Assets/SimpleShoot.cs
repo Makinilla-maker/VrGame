@@ -28,7 +28,7 @@ public class SimpleShoot : MonoBehaviour
 
     public AudioSource source;
     public AudioClip fireSound;
-
+    public int bulletsInSceneInt = 0;
     public List<GameObject> bulletsInScene = new List<GameObject>();
     public List<GameObject> bulletSocket = new List<GameObject>();
     public Animation reloadAnimation;
@@ -53,7 +53,6 @@ public class SimpleShoot : MonoBehaviour
         gunAnimator.SetTrigger("Fire");
     }
 
-    
     //This function creates the bullet behavior
     public void Shoot()
     {
@@ -83,7 +82,11 @@ public class SimpleShoot : MonoBehaviour
             // Create a bullet and add force on it in direction of the barrel
             if(!duck.GetComponent<IsDuckConected>().duck)
             {
+                Instantiate(bulletsInScene[bulletsInSceneInt], barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+                bulletSocket[bulletsInSceneInt].SetActive(false);
+                bulletsInSceneInt++;
 
+                Debug.Log(bulletsInSceneInt);
             }
             else    Instantiate(patitoPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
             shootedBullets++;
