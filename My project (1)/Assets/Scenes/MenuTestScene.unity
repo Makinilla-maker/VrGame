@@ -1578,41 +1578,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6570389989926961888}
   m_Mesh: {fileID: 6605437378241518540, guid: eebe1cb63d9559045b793f2a5e4efa46, type: 3}
---- !u!328 &2882357675201545142
-VideoPlayer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2882357675201545145}
-  m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1b61cf6ab18410f4cac802fdc8d94b04, type: 3}
-  m_TargetCameraAlpha: 1
-  m_TargetCamera3DLayout: 0
-  m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 0}
-  m_TimeReference: 0
-  m_TargetMaterialRenderer: {fileID: 0}
-  m_TargetMaterialProperty: _MainTex
-  m_RenderMode: 3
-  m_AspectRatio: 2
-  m_DataSource: 0
-  m_PlaybackSpeed: 1
-  m_AudioOutputMode: 2
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 0.122
-  m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
-  m_SkipOnDrop: 1
-  m_Looping: 0
-  m_WaitForFirstFrame: 1
-  m_FrameReadyEventEnabled: 0
-  m_VideoShaders: []
 --- !u!1 &2882357675201545145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1589,6 @@ GameObject:
   - component: {fileID: 6850354268903669230}
   - component: {fileID: 1528617711634361621}
   - component: {fileID: 8964420430491343660}
-  - component: {fileID: 2882357675201545142}
   m_Layer: 0
   m_Name: Pla
   m_TagString: Untagged
@@ -1763,7 +1727,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dcb416103b0499944ab21033f00b641c, type: 2}
+  - {fileID: 2100000, guid: d526578c81707e048a52566a51c8b2e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
