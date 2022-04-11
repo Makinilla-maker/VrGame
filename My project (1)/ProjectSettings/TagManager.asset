@@ -10,6 +10,7 @@ TagManager:
   - Controller
   - GunSphere
   - MagazineCol
+  - Whiteboard
   layers:
   - Default
   - TransparentFX
