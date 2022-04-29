@@ -11,6 +11,8 @@ TagManager:
   - GunSphere
   - MagazineCol
   - Whiteboard
+  - Tape
+  - Tape2
   layers:
   - Default
   - TransparentFX
