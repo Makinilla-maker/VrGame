@@ -53,6 +53,15 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""R"",
+                    ""type"": ""Button"",
+                    ""id"": ""fd6f54e6-2886-480e-afe8-e151314f7015"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -132,6 +141,17 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                     ""action"": ""MouseY"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd5f1638-c0d3-47cd-be57-bbbd0285f2fa"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""R"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -143,6 +163,7 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
         m_Newactionmap_ground = m_Newactionmap.FindAction("ground", throwIfNotFound: true);
         m_Newactionmap_MouseX = m_Newactionmap.FindAction("MouseX", throwIfNotFound: true);
         m_Newactionmap_MouseY = m_Newactionmap.FindAction("MouseY", throwIfNotFound: true);
+        m_Newactionmap_R = m_Newactionmap.FindAction("R", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -205,6 +226,7 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
     private readonly InputAction m_Newactionmap_ground;
     private readonly InputAction m_Newactionmap_MouseX;
     private readonly InputAction m_Newactionmap_MouseY;
+    private readonly InputAction m_Newactionmap_R;
     public struct NewactionmapActions
     {
         private @Player_NoVr m_Wrapper;
@@ -212,6 +234,7 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
         public InputAction @ground => m_Wrapper.m_Newactionmap_ground;
         public InputAction @MouseX => m_Wrapper.m_Newactionmap_MouseX;
         public InputAction @MouseY => m_Wrapper.m_Newactionmap_MouseY;
+        public InputAction @R => m_Wrapper.m_Newactionmap_R;
         public InputActionMap Get() { return m_Wrapper.m_Newactionmap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,6 +253,9 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                 @MouseY.started -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnMouseY;
                 @MouseY.performed -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnMouseY;
                 @MouseY.canceled -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnMouseY;
+                @R.started -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnR;
+                @R.performed -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnR;
+                @R.canceled -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnR;
             }
             m_Wrapper.m_NewactionmapActionsCallbackInterface = instance;
             if (instance != null)
@@ -243,6 +269,9 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                 @MouseY.started += instance.OnMouseY;
                 @MouseY.performed += instance.OnMouseY;
                 @MouseY.canceled += instance.OnMouseY;
+                @R.started += instance.OnR;
+                @R.performed += instance.OnR;
+                @R.canceled += instance.OnR;
             }
         }
     }
@@ -252,5 +281,6 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
         void OnGround(InputAction.CallbackContext context);
         void OnMouseX(InputAction.CallbackContext context);
         void OnMouseY(InputAction.CallbackContext context);
+        void OnR(InputAction.CallbackContext context);
     }
 }

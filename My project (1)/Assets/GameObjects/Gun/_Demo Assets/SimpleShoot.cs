@@ -85,8 +85,6 @@ public class SimpleShoot : MonoBehaviour
                 Instantiate(bulletsInScene[bulletsInSceneInt], barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
                 bulletSocket[bulletsInSceneInt].SetActive(false);
                 bulletsInSceneInt++;
-
-                Debug.Log(bulletsInSceneInt);
             }
             else    Instantiate(patitoPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
             shootedBullets++;
