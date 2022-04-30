@@ -33,9 +33,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "R",
+                    "name": "Raycast",
                     "type": "Button",
-                    "id": "fd6f54e6-2886-480e-afe8-e151314f7015",
+                    "id": "f9274aac-0e2f-42ab-9f21-40715bf24e84",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -122,12 +122,12 @@
                 },
                 {
                     "name": "",
-                    "id": "bd5f1638-c0d3-47cd-be57-bbbd0285f2fa",
+                    "id": "fd301b1f-4ab6-4552-accc-0ffceda17720",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "R",
+                    "action": "Raycast",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

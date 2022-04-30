@@ -14,6 +14,7 @@ TagManager:
   - Tape
   - Tape2
   - KeypadButton
+  - WallText
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Post
   - Enviroment
   - Keypad
-  - 
+  - WallTexts
   - 
   - 
   - 

@@ -55,9 +55,9 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""R"",
+                    ""name"": ""Raycast"",
                     ""type"": ""Button"",
-                    ""id"": ""fd6f54e6-2886-480e-afe8-e151314f7015"",
+                    ""id"": ""f9274aac-0e2f-42ab-9f21-40715bf24e84"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """",
@@ -144,12 +144,12 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""bd5f1638-c0d3-47cd-be57-bbbd0285f2fa"",
+                    ""id"": ""fd301b1f-4ab6-4552-accc-0ffceda17720"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""R"",
+                    ""action"": ""Raycast"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -163,7 +163,7 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
         m_Newactionmap_ground = m_Newactionmap.FindAction("ground", throwIfNotFound: true);
         m_Newactionmap_MouseX = m_Newactionmap.FindAction("MouseX", throwIfNotFound: true);
         m_Newactionmap_MouseY = m_Newactionmap.FindAction("MouseY", throwIfNotFound: true);
-        m_Newactionmap_R = m_Newactionmap.FindAction("R", throwIfNotFound: true);
+        m_Newactionmap_Raycast = m_Newactionmap.FindAction("Raycast", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -226,7 +226,7 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
     private readonly InputAction m_Newactionmap_ground;
     private readonly InputAction m_Newactionmap_MouseX;
     private readonly InputAction m_Newactionmap_MouseY;
-    private readonly InputAction m_Newactionmap_R;
+    private readonly InputAction m_Newactionmap_Raycast;
     public struct NewactionmapActions
     {
         private @Player_NoVr m_Wrapper;
@@ -234,7 +234,7 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
         public InputAction @ground => m_Wrapper.m_Newactionmap_ground;
         public InputAction @MouseX => m_Wrapper.m_Newactionmap_MouseX;
         public InputAction @MouseY => m_Wrapper.m_Newactionmap_MouseY;
-        public InputAction @R => m_Wrapper.m_Newactionmap_R;
+        public InputAction @Raycast => m_Wrapper.m_Newactionmap_Raycast;
         public InputActionMap Get() { return m_Wrapper.m_Newactionmap; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -253,9 +253,9 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                 @MouseY.started -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnMouseY;
                 @MouseY.performed -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnMouseY;
                 @MouseY.canceled -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnMouseY;
-                @R.started -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnR;
-                @R.performed -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnR;
-                @R.canceled -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnR;
+                @Raycast.started -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnRaycast;
+                @Raycast.performed -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnRaycast;
+                @Raycast.canceled -= m_Wrapper.m_NewactionmapActionsCallbackInterface.OnRaycast;
             }
             m_Wrapper.m_NewactionmapActionsCallbackInterface = instance;
             if (instance != null)
@@ -269,9 +269,9 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
                 @MouseY.started += instance.OnMouseY;
                 @MouseY.performed += instance.OnMouseY;
                 @MouseY.canceled += instance.OnMouseY;
-                @R.started += instance.OnR;
-                @R.performed += instance.OnR;
-                @R.canceled += instance.OnR;
+                @Raycast.started += instance.OnRaycast;
+                @Raycast.performed += instance.OnRaycast;
+                @Raycast.canceled += instance.OnRaycast;
             }
         }
     }
@@ -281,6 +281,6 @@ public partial class @Player_NoVr : IInputActionCollection2, IDisposable
         void OnGround(InputAction.CallbackContext context);
         void OnMouseX(InputAction.CallbackContext context);
         void OnMouseY(InputAction.CallbackContext context);
-        void OnR(InputAction.CallbackContext context);
+        void OnRaycast(InputAction.CallbackContext context);
     }
 }
