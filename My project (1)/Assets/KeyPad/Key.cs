@@ -46,7 +46,7 @@ public class Key : MonoBehaviour
         }
     }
 
-    void CheckPassword()
+    public void CheckPassword()
     {
         int total = 0;
             for(int k = 0; k < pas.Length; k++)
