@@ -11,7 +11,7 @@ public class Key : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     private Color originalColor;
     private Renderer renderer;
-    public int i = 0;
+    public int i;
 
     public char[] pas = new char[] {'0','0','0','0'};
     public char[] correctPas = new char[] {'2','8','4','5'};
@@ -48,25 +48,34 @@ public class Key : MonoBehaviour
 
     public void CheckPassword()
     {
-        int total = 0;
-            for(int k = 0; k < pas.Length; k++)
+        int g = 0;
+        for (int j=0;j<pas.Length;j++) 
+        {      
+            if (pas[j] == correctPas[j]) 
             {
-                if(pas[k] != correctPas[k])
-                {
-                    pas[k] = '0';
-                    total--;
-                    i = 0;
-                }
-                else
-                {
-                    total++;
-                }
+                g++;
             }
-        if(total == 4)
+            else
+            {
+                j=3;
+            }
+        }
+        if (g == pas.Length) 
         {
             char[] l = new char[] {'c','o','r','r','e','c','t','!'};
             s = new string(l);
-            total = 0;
+            g = 0;
+            i = 0;
+        }
+        else 
+        {   
+            for(int k = 0; k < pas.Length; k++)
+            {
+                pas[k] = '0';
+            }
+            char[] l = new char[] {'0','0','0','0'};
+            s = new string(l);
+            i = -1; 
         }
     }
 }

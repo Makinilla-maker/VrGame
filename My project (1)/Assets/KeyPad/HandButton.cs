@@ -20,30 +20,23 @@ public class HandButton : MonoBehaviour
         startColor = GetComponent<Renderer>().material.color;
         joint = GetComponent<ConfigurableJoint>();
         startPos = transform.localPosition;
-    }
-
-    void Update()
-    {
-        // if(!isPressed && GetValue() + threshold >= 1)
-        //     Pressed();
-
-        // if(isPressed && GetValue() - threshold <= 0)
-        //     Released();
+        generalPassword.i = -1;
+        isPressed = true;
     }
     void OnTriggerEnter(Collider other)
     {
-        isPressed = true;
-        if(generalPassword.pas[generalPassword.i] == '0' && isPressed)
+        if(isPressed)
         {
-            generalPassword.pas[generalPassword.i] = this.gameObject.name[0];
+            generalPassword.i++;
+            if(generalPassword.i <= 3)     generalPassword.pas[generalPassword.i] = this.gameObject.name[0];
+            isPressed = false;
         }
         generalPassword.s = new string(generalPassword.pas);
         Debug.Log("Pressed");
     }
     void OnTriggerExit(Collider other)
     {
-        generalPassword.i++;
-        isPressed = false;
+        isPressed = true;
         Debug.Log("Released");
     }
 }
