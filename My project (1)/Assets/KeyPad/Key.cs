@@ -40,5 +40,33 @@ public class Key : MonoBehaviour
         {
             renderer.material.color = originalColor;
         }
+        if(i == 3)
+        {
+            CheckPassword();
+        }
+    }
+
+    void CheckPassword()
+    {
+        int total = 0;
+            for(int k = 0; k < pas.Length; k++)
+            {
+                if(pas[k] != correctPas[k])
+                {
+                    pas[k] = '0';
+                    total--;
+                    i = 0;
+                }
+                else
+                {
+                    total++;
+                }
+            }
+        if(total == 4)
+        {
+            char[] l = new char[] {'c','o','r','r','e','c','t','!'};
+            s = new string(l);
+            total = 0;
+        }
     }
 }
