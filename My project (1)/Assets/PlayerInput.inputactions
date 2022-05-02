@@ -22,6 +22,42 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "RightHandSelectGrip",
+                    "type": "Button",
+                    "id": "e83ba08b-68bc-4842-847a-14a19857f601",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftHandSelectGrip",
+                    "type": "Button",
+                    "id": "f33738fc-e2e8-4497-ab5f-28876b247694",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "RightHandSelectTrigger",
+                    "type": "Button",
+                    "id": "b9b90cce-deb7-4eb9-af2f-f6cadd79777b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "LeftHandSelectTrigger",
+                    "type": "Button",
+                    "id": "6131d576-d4a5-4611-8991-925a7a0875a6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -44,6 +80,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e07e431a-4cdf-4695-aabd-7ffa6b0c3c30",
+                    "path": "<OpenVROculusTouchController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHandSelectGrip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ba276c19-cc2b-40e4-9afd-625e63c14a56",
+                    "path": "<OpenVROculusTouchController>{LeftHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHandSelectGrip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0968b807-a9f1-444a-b7b7-68f3996a4261",
+                    "path": "<OpenVROculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RightHandSelectTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "226e54ed-de93-47fe-a845-54560f2049b7",
+                    "path": "<OpenVROculusTouchController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LeftHandSelectTrigger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
