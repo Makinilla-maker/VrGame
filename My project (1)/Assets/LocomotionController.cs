@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class LocomotionController : MonoBehaviour
 {
     public XRController rightTpRay;
+    public GameObject feet;
     public InputHelpers.Button teleportActivationButton;
     public float activationThreshold = 0.1f;
 
@@ -15,6 +16,7 @@ public class LocomotionController : MonoBehaviour
         if(rightTpRay)
         {
             rightTpRay.gameObject.SetActive(CheckIfActivated(rightTpRay));
+            feet.SetActive(CheckIfActivated(rightTpRay));
         }
     }
 
