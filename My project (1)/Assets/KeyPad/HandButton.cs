@@ -7,6 +7,7 @@ public class HandButton : MonoBehaviour
     [SerializeField] private float threshold = 0.1f;
     [SerializeField] private float deadZone = 0.025f;
 
+    private AudioSource audio;
     public Key generalPassword;
     private bool isPressed;
     private Color startColor;
@@ -19,6 +20,7 @@ public class HandButton : MonoBehaviour
     {
         startColor = GetComponent<Renderer>().material.color;
         joint = GetComponent<ConfigurableJoint>();
+        audio = GetComponent<AudioSource>();
         startPos = transform.localPosition;
         generalPassword.i = -1;
         isPressed = true;
@@ -27,6 +29,7 @@ public class HandButton : MonoBehaviour
     {
         if(isPressed)
         {
+            audio.Play();
             generalPassword.i++;
             if(generalPassword.i <= 3)     generalPassword.pas[generalPassword.i] = this.gameObject.name[0];
             isPressed = false;
