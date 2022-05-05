@@ -11,6 +11,7 @@ public class Key : MonoBehaviour
     public TextMeshProUGUI textDisplay;
     private Color originalColor;
     private Renderer renderer;
+    public DoorLvl1AnimationController anim;
     public int i;
 
     public char[] pas = new char[] {'0','0','0','0'};
@@ -67,6 +68,8 @@ public class Key : MonoBehaviour
             s = new string(l);
             g = 0;
             i = 0;
+            anim.start = true;
+            anim.audio.Play();
         }
         else 
         {   
