@@ -10,7 +10,8 @@ public class HandButton : MonoBehaviour
     private AudioSource audio;
     public Key generalPassword;
     private bool isPressed;
-    private Color startColor;
+    public Color startColor;
+    public  Color selectedColor;
     private Vector3 startPos;
     public UnityEvent onPressed, onReleased;
     public GameObject selectedButton;
@@ -29,6 +30,7 @@ public class HandButton : MonoBehaviour
     {
         if(isPressed)
         {
+            gameObject.GetComponent<Renderer>().material.color = selectedColor;
             audio.Play();
             generalPassword.i++;
             if(generalPassword.i <= 3)     generalPassword.pas[generalPassword.i] = this.gameObject.name[0];

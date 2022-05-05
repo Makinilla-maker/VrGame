@@ -7,7 +7,7 @@ using UnityEditor.UIElements;
 public class Key : MonoBehaviour
 {
     public bool keyHit = false;
-
+    public GameObject[] allButtons;
     public TextMeshProUGUI textDisplay;
     private Color originalColor;
     private Renderer renderer;
@@ -63,6 +63,7 @@ public class Key : MonoBehaviour
         if (g == pas.Length) 
         {
             char[] l = new char[] {'c','o','r','r','e','c','t','!'};
+            RestartButtonColor();
             s = new string(l);
             g = 0;
             i = 0;
@@ -73,9 +74,18 @@ public class Key : MonoBehaviour
             {
                 pas[k] = '0';
             }
+           RestartButtonColor();
             char[] l = new char[] {'0','0','0','0'};
             s = new string(l);
             i = -1; 
+        }
+    }
+
+    void RestartButtonColor()
+    {
+    for(int a = 0; a < 8; a++)
+        {
+            allButtons[a].GetComponent<Renderer>().material.color = allButtons[a].GetComponent<HandButton>().startColor;
         }
     }
 }
