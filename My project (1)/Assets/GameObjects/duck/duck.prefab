@@ -167,7 +167,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
   m_FirstHoverEntered:
@@ -277,6 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duck: 0
+  tag: 
 --- !u!65 &1051979932489829576
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -302,4 +303,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e05fa960c551d9d43b9b091512070422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTime: 10

@@ -621,6 +621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightTpRay: {fileID: 646824336529912907}
+  feet: {fileID: 0}
   teleportActivationButton: 14
   activationThreshold: 0.1
 --- !u!1 &646824336529912902
@@ -705,7 +706,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 2
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_StartingSelectedInteractable: {fileID: 0}
