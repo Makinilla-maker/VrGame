@@ -13,7 +13,7 @@ public class Key : MonoBehaviour
     private Color originalColor;
     private Renderer renderer;
     public DoorLvl1AnimationController anim;
-    public int i;
+    public int i = -1;
 
     public char[] pas = new char[] {'0','0','0','0'};
     public char[] correctPas = new char[] {'2','8','4','5'};

@@ -15,12 +15,10 @@ public class HandButton : MonoBehaviour
     private Vector3 startPos;
     public UnityEvent onPressed, onReleased;
     public GameObject selectedButton;
-    [SerializeField] private ConfigurableJoint joint;
 
     void Start()
     {
         startColor = GetComponent<Renderer>().material.color;
-        joint = GetComponent<ConfigurableJoint>();
         audio = GetComponent<AudioSource>();
         startPos = transform.localPosition;
         generalPassword.i = -1;
@@ -33,6 +31,7 @@ public class HandButton : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.color = selectedColor;
             audio.Play();
             generalPassword.i++;
+            Debug.Log(generalPassword.i);
             if(generalPassword.i <= 3)     generalPassword.pas[generalPassword.i] = this.gameObject.name[0];
             isPressed = false;
         }
