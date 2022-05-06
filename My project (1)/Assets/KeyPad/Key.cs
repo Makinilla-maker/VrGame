@@ -8,6 +8,7 @@ public class Key : MonoBehaviour
 {
     public bool keyHit = false;
     public GameObject[] allButtons;
+    public GameObject nextTeleportationArea;
     public TextMeshProUGUI textDisplay;
     private Color originalColor;
     private Renderer renderer;
@@ -25,6 +26,7 @@ public class Key : MonoBehaviour
         s = new string(pas);
         renderer = GetComponent<Renderer>();
         originalColor = renderer.material.color;
+        nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = false;
     }
 
     // Update is called once per frame
@@ -70,6 +72,7 @@ public class Key : MonoBehaviour
             i = 0;
             anim.start = true;
             anim.audio.Play();
+            nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
         }
         else 
         {   
