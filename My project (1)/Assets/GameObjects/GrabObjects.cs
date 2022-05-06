@@ -7,7 +7,7 @@ public class GrabObjects : MonoBehaviour
     public string layerName = "NoTRayCastObject";
     public int layerNumber = 13;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         foreach (GameObject go in Resources.FindObjectsOfTypeAll(typeof(GameObject)) as GameObject[])
         {

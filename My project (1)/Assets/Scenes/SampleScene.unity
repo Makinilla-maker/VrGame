@@ -25640,6 +25640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: XRRig
       objectReference: {fileID: 0}
+    - target: {fileID: 4584732210466118484, guid: a79002de52cb8bc40a5fc336f8928afc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7dbf5e54a6b77f047b2b13aa1c34ded4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a79002de52cb8bc40a5fc336f8928afc, type: 3}
 --- !u!23 &4490397747007003680
