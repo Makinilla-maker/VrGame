@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6708001433461074535}
   - component: {fileID: 7499211899729290058}
   - component: {fileID: 5483967065069262321}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: dart
   m_TagString: Bullet
   m_Icon: {fileID: 0}

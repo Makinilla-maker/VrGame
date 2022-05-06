@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 7201932322647907055}
   - component: {fileID: 1051979932489829576}
   - component: {fileID: 4245155341959914090}
-  m_Layer: 7
+  m_Layer: 13
   m_Name: duck
   m_TagString: Magazine
   m_Icon: {fileID: 0}
