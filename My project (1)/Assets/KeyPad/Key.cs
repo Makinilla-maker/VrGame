@@ -14,6 +14,7 @@ public class Key : MonoBehaviour
     private Renderer renderer;
     public DoorLvl1AnimationController anim;
     public int i = -1;
+    public GameObject[] lights;
 
     public char[] pas = new char[] {'0','0','0','0'};
     public char[] correctPas = new char[] {'2','8','4','5'};
@@ -73,6 +74,7 @@ public class Key : MonoBehaviour
             anim.start = true;
             anim.audio.Play();
             nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
+           StartCoroutine(LightEnable());
         }
         else 
         {   
@@ -80,13 +82,20 @@ public class Key : MonoBehaviour
             {
                 pas[k] = '0';
             }
-           RestartButtonColor();
+            RestartButtonColor();
             char[] l = new char[] {'0','0','0','0'};
             s = new string(l);
             i = -1; 
         }
     }
-
+    IEnumerator LightEnable()
+    {
+        for(int i = 0; i < lights.Length;i++)
+        {
+            yield return new WaitForSeconds(1.5f);
+            lights[i].SetActive(true);
+        }
+    }
     void RestartButtonColor()
     {
     for(int a = 0; a < 8; a++)
