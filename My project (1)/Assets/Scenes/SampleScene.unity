@@ -25568,7 +25568,7 @@ PrefabInstance:
     - target: {fileID: 4477976508071506557, guid: a79002de52cb8bc40a5fc336f8928afc,
         type: 3}
       propertyPath: m_RaycastMask.m_Bits
-      value: 2147483647
+      value: 8191
       objectReference: {fileID: 0}
     - target: {fileID: 4477976508071506557, guid: a79002de52cb8bc40a5fc336f8928afc,
         type: 3}
