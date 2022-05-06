@@ -16,6 +16,7 @@ TagManager:
   - KeypadButton
   - WallText
   - BallRestart
+  - P2
   layers:
   - Default
   - TransparentFX
