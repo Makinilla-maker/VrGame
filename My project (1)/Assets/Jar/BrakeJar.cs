@@ -14,7 +14,13 @@ public class BrakeJar : MonoBehaviour
         //parts.SetActive(false);
         foreach(Transform child in parts.transform)
         {
-            child.GetComponent<MeshRenderer>().enabled = false;
+            if(child.gameObject.name != "iman")
+            {
+                child.GetComponent<MeshRenderer>().enabled = false;
+            }
+            child.GetComponent<MeshCollider>().enabled = false;
+            child.GetComponent<Rigidbody>().velocity = rb.velocity;
+
         }
     }
 
@@ -31,6 +37,7 @@ public class BrakeJar : MonoBehaviour
             foreach(Transform child in parts.transform)
             {
                 child.GetComponent<MeshRenderer>().enabled = true;
+                child.GetComponent<MeshCollider>().enabled = true;
             }
             Destroy(this.gameObject);
         }
