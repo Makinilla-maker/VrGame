@@ -7,39 +7,36 @@ public class BrakeJar : MonoBehaviour
     private Rigidbody rb;
     public float limitSpeed;
     public GameObject parts;
+    public GameObject main;
+    public GameObject tap;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //parts.SetActive(false);
-        foreach(Transform child in parts.transform)
-        {
-            if(child.gameObject.name != "iman")
-            {
-                child.GetComponent<MeshRenderer>().enabled = false;
-            }
-            child.GetComponent<MeshCollider>().enabled = false;
-            child.GetComponent<Rigidbody>().velocity = rb.velocity;
-
-        }
+        main.SetActive(true);
+        // foreach(Transform child in parts.transform)
+        // {
+        //     if(child.gameObject.name != "iman")
+        //     {
+        //         child.GetComponent<MeshRenderer>().enabled = false;
+        //     }
+        //     child.GetComponent<MeshCollider>().enabled = false;
+        // }
+        parts.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(rb.velocity.magnitude);
-        parts.transform.position = transform.position;
+
     }
     private void OnCollisionEnter(Collision other)
     {
-        if(rb.velocity.magnitude >= limitSpeed)
+        if(other.relativeVelocity.magnitude >= limitSpeed && other.gameObject.layer == 6)
         {
-            foreach(Transform child in parts.transform)
-            {
-                child.GetComponent<MeshRenderer>().enabled = true;
-                child.GetComponent<MeshCollider>().enabled = true;
-            }
-            Destroy(this.gameObject);
+            Destroy(tap.gameObject);
+            main.SetActive(false);
+            parts.SetActive(true);
         }
     }
 }
