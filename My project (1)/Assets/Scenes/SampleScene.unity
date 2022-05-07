@@ -37724,6 +37724,7 @@ GameObject:
   - component: {fileID: 984776035249297661}
   - component: {fileID: 3694620997163550477}
   - component: {fileID: 3285440486835699927}
+  - component: {fileID: 7243331333226138532}
   m_Layer: 0
   m_Name: FilmProjector.001
   m_TagString: Untagged
@@ -37731,6 +37732,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &7243331333226138532
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7243331333226138531}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: deea428f0b42bff49b0952138b08a570, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &7278657860920584862
 Transform:
   m_ObjectHideFlags: 0
@@ -44796,6 +44816,7 @@ GameObject:
   - component: {fileID: 7678642276927987034}
   - component: {fileID: 7999064164057003825}
   - component: {fileID: 1248468356116393942}
+  - component: {fileID: 8539609158261231637}
   m_Layer: 0
   m_Name: FilmProjector.002
   m_TagString: Untagged
@@ -44803,6 +44824,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &8539609158261231637
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8539609158261231636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6908a714c372c84aa3c8e13c76e1c35, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8544208573105306506
 GameObject:
   m_ObjectHideFlags: 0
