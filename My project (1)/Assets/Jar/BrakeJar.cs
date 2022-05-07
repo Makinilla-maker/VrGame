@@ -11,20 +11,28 @@ public class BrakeJar : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        parts.SetActive(false);
+        //parts.SetActive(false);
+        foreach(Transform child in parts.transform)
+        {
+            child.GetComponent<MeshRenderer>().enabled = false;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
         Debug.Log(rb.velocity.magnitude);
+        parts.transform.position = transform.position;
     }
     private void OnCollisionEnter(Collision other)
     {
         if(rb.velocity.magnitude >= limitSpeed)
         {
+            foreach(Transform child in parts.transform)
+            {
+                child.GetComponent<MeshRenderer>().enabled = true;
+            }
             Destroy(this.gameObject);
-            parts.SetActive(true);
         }
     }
 }
