@@ -17,6 +17,8 @@ TagManager:
   - WallText
   - BallRestart
   - P2
+  - CanInventory
+  - JarFull
   layers:
   - Default
   - TransparentFX
@@ -32,8 +34,8 @@ TagManager:
   - Keypad
   - WallTexts
   - NotRayCastObject
-  - 
-  - 
+  - JarFull
+  - JarPart
   - 
   - 
   - 

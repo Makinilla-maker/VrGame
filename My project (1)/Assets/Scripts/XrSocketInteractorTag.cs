@@ -5,7 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XrSocketInteractorTag : XRSocketInteractor
 {
-    public string targetTag;
+    public string targetTag1;
+    public string targetTag2;
+    public string targetTag3;
     public bool realoaded = false;
 
     public override bool CanSelect(XRBaseInteractable interactable)
@@ -13,7 +15,7 @@ public class XrSocketInteractorTag : XRSocketInteractor
         if(!realoaded) 
         {
             //realoaded = true;
-            return base.CanSelect(interactable) && interactable.CompareTag(targetTag);
+            return base.CanSelect(interactable) && (interactable.CompareTag(targetTag1) || interactable.CompareTag(targetTag2) || interactable.CompareTag(targetTag3));
         }
         else
         {

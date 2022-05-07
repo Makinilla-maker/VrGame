@@ -314,6 +314,7 @@ GameObject:
   - component: {fileID: 8359854567365261258}
   - component: {fileID: 4116688297777071454}
   - component: {fileID: 5586867494847869438}
+  - component: {fileID: 1490817014}
   m_Layer: 7
   m_Name: 6
   m_TagString: Untagged
@@ -402,6 +403,20 @@ CapsuleCollider:
   m_Height: 0.117217615
   m_Direction: 2
   m_Center: {x: 4.4092302e-10, y: 0.0050055, z: -0.00639117}
+--- !u!114 &1490817014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3637153595123038882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc852aa5f7199a46ae202a9f1ecfdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck: 0
+  tag: Bullet
 --- !u!1 &3881904902818949095
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duck: 0
-  tag: 
+  tag: Bullet
 --- !u!1 &4800865813057913820
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,6 +572,7 @@ GameObject:
   - component: {fileID: 6482599967152662204}
   - component: {fileID: 5348400741559856291}
   - component: {fileID: 4798390860723876856}
+  - component: {fileID: 921946430}
   m_Layer: 7
   m_Name: 5
   m_TagString: Untagged
@@ -645,6 +661,20 @@ CapsuleCollider:
   m_Height: 0.117217615
   m_Direction: 2
   m_Center: {x: 4.4092302e-10, y: 0.0050055, z: -0.00639117}
+--- !u!114 &921946430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4971199737971331366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc852aa5f7199a46ae202a9f1ecfdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck: 0
+  tag: Bullet
 --- !u!1 &5022655486742504960
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +686,7 @@ GameObject:
   - component: {fileID: 5278404113005506457}
   - component: {fileID: 9044013543442331632}
   - component: {fileID: 4934698643501606644}
+  - component: {fileID: 211607764}
   m_Layer: 7
   m_Name: 3
   m_TagString: Untagged
@@ -744,6 +775,20 @@ CapsuleCollider:
   m_Height: 0.117217615
   m_Direction: 2
   m_Center: {x: 4.4092302e-10, y: 0.0050055, z: -0.00639117}
+--- !u!114 &211607764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5022655486742504960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc852aa5f7199a46ae202a9f1ecfdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck: 0
+  tag: Bullet
 --- !u!1 &5799481154654968093
 GameObject:
   m_ObjectHideFlags: 0
@@ -837,6 +882,7 @@ GameObject:
   - component: {fileID: 3386632745924365591}
   - component: {fileID: 9087020118108403596}
   - component: {fileID: 3271055060213121073}
+  - component: {fileID: 1572011027}
   m_Layer: 7
   m_Name: 4
   m_TagString: Untagged
@@ -925,6 +971,20 @@ CapsuleCollider:
   m_Height: 0.117217615
   m_Direction: 2
   m_Center: {x: 4.4092302e-10, y: 0.0050055, z: -0.00639117}
+--- !u!114 &1572011027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184787500559745715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc852aa5f7199a46ae202a9f1ecfdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck: 0
+  tag: Bullet
 --- !u!1 &6553884671843756462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1032,7 +1092,7 @@ GameObject:
   - component: {fileID: 6553884673203814175}
   m_Layer: 7
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: CanInventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1267,6 +1327,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: a8e7892e-12d8-477d-b676-2c4adb6bb9a3
     m_ActionName: Player/Shoot
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: e83ba08b-68bc-4842-847a-14a19857f601
+    m_ActionName: Player/RightHandSelectGrip
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f33738fc-e2e8-4497-ab5f-28876b247694
+    m_ActionName: Player/LeftHandSelectGrip
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b9b90cce-deb7-4eb9-af2f-f6cadd79777b
+    m_ActionName: Player/RightHandSelectTrigger
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 6131d576-d4a5-4611-8991-925a7a0875a6
+    m_ActionName: Player/LeftHandSelectTrigger
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1615,6 +1691,7 @@ GameObject:
   - component: {fileID: 2874517907334190639}
   - component: {fileID: 825361138643811121}
   - component: {fileID: 3283628602741122914}
+  - component: {fileID: 988883332}
   m_Layer: 7
   m_Name: 2
   m_TagString: Untagged
@@ -1703,6 +1780,20 @@ CapsuleCollider:
   m_Height: 0.117217615
   m_Direction: 2
   m_Center: {x: 4.4092302e-10, y: 0.0050055, z: -0.00639117}
+--- !u!114 &988883332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8952888927369617076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc852aa5f7199a46ae202a9f1ecfdbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duck: 0
+  tag: Bullet
 --- !u!1 &9115755347109502678
 GameObject:
   m_ObjectHideFlags: 0
