@@ -9,6 +9,7 @@ public class BrakeJar : MonoBehaviour
     public GameObject parts;
     public GameObject main;
     public GameObject tap;
+    public GameObject whatsInside;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,11 @@ public class BrakeJar : MonoBehaviour
             Destroy(tap.gameObject);
             main.SetActive(false);
             parts.SetActive(true);
+            Rigidbody r = whatsInside.AddComponent<Rigidbody>();
+            r.mass = 1;
+            r.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            XROffset x = whatsInside.AddComponent<XROffset>();
+            x.movementType = UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.MovementType.VelocityTracking;
         }
     }
 }
