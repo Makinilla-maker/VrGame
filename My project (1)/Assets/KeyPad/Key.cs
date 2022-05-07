@@ -74,7 +74,7 @@ public class Key : MonoBehaviour
             anim.start = true;
             anim.audio.Play();
             nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
-           StartCoroutine(LightEnable());
+            StartCoroutine(LightEnable());
         }
         else 
         {   
@@ -94,11 +94,12 @@ public class Key : MonoBehaviour
         {
             yield return new WaitForSeconds(1.5f);
             lights[i].SetActive(true);
+            
         }
     }
     void RestartButtonColor()
     {
-    for(int a = 0; a < 8; a++)
+    for(int a = 0; a <= 8; a++)
         {
             allButtons[a].GetComponent<Renderer>().material.color = allButtons[a].GetComponent<HandButton>().startColor;
         }

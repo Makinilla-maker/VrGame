@@ -3350,8 +3350,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4825,7 +4825,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 887349888}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 1b61cf6ab18410f4cac802fdc8d94b04, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -27770,17 +27770,17 @@ PrefabInstance:
     - target: {fileID: 4477976508195645637, guid: a79002de52cb8bc40a5fc336f8928afc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.94
+      value: -21.11
       objectReference: {fileID: 0}
     - target: {fileID: 4477976508195645637, guid: a79002de52cb8bc40a5fc336f8928afc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.503
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 4477976508195645637, guid: a79002de52cb8bc40a5fc336f8928afc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.98
+      value: 12.88
       objectReference: {fileID: 0}
     - target: {fileID: 4477976508195645637, guid: a79002de52cb8bc40a5fc336f8928afc,
         type: 3}
@@ -38067,7 +38067,7 @@ MonoBehaviour:
   nextTeleportationArea: {fileID: 8605318971594379164}
   textDisplay: {fileID: 640786774}
   anim: {fileID: 1114027462}
-  i: 3
+  i: -1
   lights:
   - {fileID: 1109961281}
   - {fileID: 232723984}
@@ -38077,7 +38077,7 @@ MonoBehaviour:
   - {fileID: 202111150}
   - {fileID: 988359351}
   - {fileID: 732669933}
-  pas: 3200380034003500
+  pas: 3000300030003000
   correctPas: 3200380034003500
   s: 
 --- !u!23 &7416691524328993237
