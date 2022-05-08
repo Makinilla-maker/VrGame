@@ -33,16 +33,23 @@ public class BrakeJar : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if(other.relativeVelocity.magnitude >= limitSpeed && other.gameObject.layer == 6)
+        if(other.relativeVelocity.magnitude >= limitSpeed && other.gameObject.layer != LayerMask.NameToLayer("Default"))
         {
             Destroy(tap.gameObject);
             main.SetActive(false);
             parts.SetActive(true);
-            Rigidbody r = whatsInside.AddComponent<Rigidbody>();
-            r.mass = 1;
-            r.collisionDetectionMode = CollisionDetectionMode.Continuous;
-            XROffset x = whatsInside.AddComponent<XROffset>();
-            x.movementType = UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.MovementType.VelocityTracking;
+            if (whatsInside.GetComponent<Rigidbody>() != null)
+            {
+                Rigidbody r = whatsInside.AddComponent<Rigidbody>();
+                r.mass = 1;
+                r.collisionDetectionMode = CollisionDetectionMode.Continuous;
+            }
+               
+            if(whatsInside.GetComponent<XROffset>()!= null)
+            {
+                XROffset x = whatsInside.AddComponent<XROffset>();
+                x.movementType = UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.MovementType.VelocityTracking;
+            }                
         }
     }
 }

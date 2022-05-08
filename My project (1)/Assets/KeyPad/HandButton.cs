@@ -26,17 +26,21 @@ public class HandButton : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(isPressed)
+        if(other.transform.tag == "Controller")
         {
-            gameObject.GetComponent<Renderer>().material.color = selectedColor;
-            audio.Play();
-            generalPassword.i++;
-            Debug.Log(generalPassword.i);
-            if(generalPassword.i <= 3)     generalPassword.pas[generalPassword.i] = this.gameObject.name[0];
-            isPressed = false;
+            if(isPressed)
+            {
+                gameObject.GetComponent<Renderer>().material.color = selectedColor;
+                audio.Play();
+                generalPassword.i++;
+                Debug.Log(generalPassword.i);
+                if(generalPassword.i <= 3)     generalPassword.pas[generalPassword.i] = this.gameObject.name[0];
+                isPressed = false;
+            }
+            generalPassword.s = new string(generalPassword.pas);
+            Debug.Log("Pressed");
         }
-        generalPassword.s = new string(generalPassword.pas);
-        Debug.Log("Pressed");
+        
     }
     void OnTriggerExit(Collider other)
     {
