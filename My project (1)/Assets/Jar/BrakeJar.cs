@@ -48,7 +48,15 @@ public class BrakeJar : MonoBehaviour
             if(whatsInside.GetComponent<XROffset>()!= null)
             {
                 XROffset x = whatsInside.AddComponent<XROffset>();
-                x.movementType = UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.MovementType.VelocityTracking;
+                if(whatsInside.name != "iman")
+                {
+                    x.movementType = UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.MovementType.VelocityTracking;
+                }
+                else
+                {
+                    x.movementType = UnityEngine.XR.Interaction.Toolkit.XRBaseInteractable.MovementType.Instantaneous;
+                }
+                
             }                
         }
     }
