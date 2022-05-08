@@ -70,7 +70,7 @@ public class Key : MonoBehaviour
             RestartButtonColor();
             s = new string(l);
             g = 0;
-            i = 0;
+            i = -1;
             anim.start = true;
             anim.audio.Play();
             nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
@@ -99,7 +99,7 @@ public class Key : MonoBehaviour
     }
     void RestartButtonColor()
     {
-    for(int a = 0; a <= 8; a++)
+        for(int a = 0; a <= 8; a++)
         {
             allButtons[a].GetComponent<Renderer>().material.color = allButtons[a].GetComponent<HandButton>().startColor;
         }
