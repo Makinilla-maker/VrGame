@@ -5,6 +5,9 @@ using UnityEngine;
 public class ObjectDetection : MonoBehaviour
 {
     public List<GameObject> droppedItemsList = new List<GameObject>();
+    public Transform newPos;
+    public GameObject room;
+    public GameObject roomF;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +35,8 @@ public class ObjectDetection : MonoBehaviour
     {
         //effecto de camera VHS
         //tp a escena
-        GameObject.Find("XRRig").gameObject.transform.position = new Vector3(-22.5799999f,-0.430000007f,10.5200005f);
+        GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
+        room.transform.position = roomF.transform.position;
+        //room.SetActive(false);
     }
 }

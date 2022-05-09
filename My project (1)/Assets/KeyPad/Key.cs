@@ -74,7 +74,7 @@ public class Key : MonoBehaviour
             anim.start = true;
             anim.audio.Play();
             nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
-            StartCoroutine(LightEnable());
+            //StartCoroutine(LightEnable());
         }
         else 
         {   
