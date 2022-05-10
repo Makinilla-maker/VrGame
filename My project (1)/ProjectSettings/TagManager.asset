@@ -21,6 +21,7 @@ TagManager:
   - JarFull
   - Jars
   - TriggerForVideo
+  - Triggers
   layers:
   - Default
   - TransparentFX
@@ -38,7 +39,7 @@ TagManager:
   - NotRayCastObject
   - JarFull
   - JarPart
-  - 
+  - Triggers
   - 
   - 
   - 

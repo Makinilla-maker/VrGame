@@ -8,6 +8,7 @@ public class ObjectDetection : MonoBehaviour
     public Transform newPos;
     public GameObject room;
     public GameObject roomF;
+    public Performance performance;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +38,7 @@ public class ObjectDetection : MonoBehaviour
         //tp a escena
         GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
         room.transform.position = roomF.transform.position;
+        performance.loadAsylum = true;
         //room.SetActive(false);
     }
 }
