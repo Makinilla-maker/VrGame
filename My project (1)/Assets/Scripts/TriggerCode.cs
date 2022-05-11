@@ -6,7 +6,7 @@ public class TriggerCode : MonoBehaviour
 {
     [SerializeField] private string name;
     public Performance performance;
-    private bool unLoadFirstPuzzle;
+    [SerializeField] private bool unLoadFirstPuzzle;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +24,7 @@ public class TriggerCode : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Enterd");
         if(other.tag == "Controller" && unLoadFirstPuzzle)
         {
             Debug.Log("Enter to colliders");

@@ -26,7 +26,7 @@ public class HandButton : MonoBehaviour
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.transform.tag == "Controller")
+        if(other.transform.tag == "Controller" && other.GetType() == typeof(BoxCollider))
         {
             if(isPressed)
             {
