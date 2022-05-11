@@ -7,11 +7,13 @@ public class TriggerCode : MonoBehaviour
     [SerializeField] private string name;
     public Performance performance;
     [SerializeField] private bool unLoadFirstPuzzle;
+    [SerializeField] private bool unloadSecondPuzzle;
     // Start is called before the first frame update
     void Start()
     {
         name = gameObject.name;
         unLoadFirstPuzzle = false;
+        unloadSecondPuzzle = false;
     }
 
     // Update is called once per frame
@@ -20,6 +22,10 @@ public class TriggerCode : MonoBehaviour
         if(name == "CubeLocateSecondPuzzle")
         {
             unLoadFirstPuzzle=true;
+        }
+        if (name == "CubeLocateThirdPuzzle")
+        {
+            unloadSecondPuzzle = true;
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -30,6 +36,17 @@ public class TriggerCode : MonoBehaviour
             Debug.Log("Enter to colliders");
             performance.unLoadFirstPuzzle = true;
             unLoadFirstPuzzle = false;
+            Destroy(this.gameObject);
+        }
+        {
+            if (other.tag == "Controller" && unloadSecondPuzzle)
+            {
+                Debug.Log("Enter to colliders");
+                performance.unLoadSecondPuzzle = true;
+                unLoadFirstPuzzle = false;
+                Destroy(this.gameObject);
+            }
         }
     }
+
 }

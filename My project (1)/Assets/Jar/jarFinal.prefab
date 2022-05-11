@@ -6597,6 +6597,8 @@ MonoBehaviour:
   main: {fileID: 1271807338335614403}
   tap: {fileID: 6140719951947619056}
   whatsInside: {fileID: 1319502621526083757}
+  anim: {fileID: 0}
+  activate: 0
 --- !u!65 &1925590839
 BoxCollider:
   m_ObjectHideFlags: 0

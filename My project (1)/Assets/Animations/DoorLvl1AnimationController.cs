@@ -13,6 +13,7 @@ public class DoorLvl1AnimationController : MonoBehaviour
     {
         start = false;
         audio = GetComponent<AudioSource>();
+        Debug.Log(this.gameObject.name);
     }
 
     // Update is called once per frame
@@ -20,9 +21,17 @@ public class DoorLvl1AnimationController : MonoBehaviour
     {
         if(start)
         {
+            if(this.gameObject.name == "DoorD_V2 (2)")
+            {
+                lAnim.Play("TheatreLeftDoorOpen");
+                rAnim.Play("TheatreRightDoorMove");
+            }
+            else
+            {
+                lAnim.Play("LeftOpen");
+                rAnim.Play("RightOpen");
+            }
             
-            lAnim.Play("LeftOpen");
-            rAnim.Play("RightOpen");
         }
     }
 }

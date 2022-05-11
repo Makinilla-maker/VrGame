@@ -10,6 +10,8 @@ public class BrakeJar : MonoBehaviour
     public GameObject main;
     public GameObject tap;
     public GameObject whatsInside;
+    public DoorLvl1AnimationController anim;
+    public bool activate;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,12 @@ public class BrakeJar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(activate)
+        {
+            Debug.Log("asda");
+            anim.start = true;
+            anim.audio.Play();
+        }
     }
     private void OnCollisionEnter(Collision other)
     {
@@ -44,8 +51,8 @@ public class BrakeJar : MonoBehaviour
                 r.mass = 1;
                 r.collisionDetectionMode = CollisionDetectionMode.Continuous;
             }
-               
-            if(whatsInside.GetComponent<XROffset>()!= null)
+            anim.start = true;
+            if (whatsInside.GetComponent<XROffset>()!= null)
             {
                 XROffset x = whatsInside.AddComponent<XROffset>();
                 if(whatsInside.name != "iman")
