@@ -12,6 +12,7 @@ public class Performance : MonoBehaviour
     public GameObject wallToBlockFirstPuzzle;
     public GameObject wallToBlockSecondPuzzle;
     public GameObject puzzleSecondRoom;
+    public List<GameObject> GameObjectsToDesactivateWhenSecondPuzzle = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,10 @@ public class Performance : MonoBehaviour
         firstRoomLoadOneTime = false;
         wallToBlockFirstPuzzle.SetActive(false);
         wallToBlockSecondPuzzle.SetActive(false);
+        for(int i = 0; i<GameObjectsToDesactivateWhenSecondPuzzle.Count; i++)
+        {
+            GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +34,10 @@ public class Performance : MonoBehaviour
         {
             puzzleFirstRoom.gameObject.SetActive(true);
             puzzleSecondRoom.gameObject.SetActive(true);
+            for (int i = 0; i < GameObjectsToDesactivateWhenSecondPuzzle.Count; i++)
+            {
+                GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(true);
+            }
             firstRoomLoadOneTime = true;
         }
         if(unLoadFirstPuzzle)
@@ -40,6 +49,10 @@ public class Performance : MonoBehaviour
         {
             wallToBlockSecondPuzzle.SetActive(true);
             puzzleSecondRoom.SetActive(false);
+            for (int i = 0; i < GameObjectsToDesactivateWhenSecondPuzzle.Count; i++)
+            {
+                GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(false);
+            }
         }
     }
 }
