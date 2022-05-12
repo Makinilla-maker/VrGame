@@ -7,32 +7,21 @@ public class SimpleShoot : MonoBehaviour
 {
     [Header("Prefab Refrences")]
     public GameObject bulletPrefab;
-    public GameObject fakeBulletPrefab;
-    public GameObject patitoPrefab;
     public GameObject casingPrefab;
     public GameObject muzzleFlashPrefab;
-
-    [Header("Bullets Section")]
-    public int totalBullets;
-    private int shootedBullets = 0;
 
     [Header("Location Refrences")]
     [SerializeField] private Animator gunAnimator;
     [SerializeField] private Transform barrelLocation;
     [SerializeField] private Transform casingExitLocation;
-
+    public AudioSource source;
+    public AudioClip sound;
     [Header("Settings")]
     [Tooltip("Specify time to destory the casing object")] [SerializeField] private float destroyTimer = 2f;
-    [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 0.1f;
-    [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 50f;
+    [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
+    [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
 
-    public AudioSource source;
-    public AudioClip fireSound;
-    public int bulletsInSceneInt = 0;
-    public List<GameObject> bulletsInScene = new List<GameObject>();
-    public List<GameObject> bulletSocket = new List<GameObject>();
-    public Animation reloadAnimation;
-    public GameObject duck;
+
     void Start()
     {
         if (barrelLocation == null)
@@ -40,61 +29,36 @@ public class SimpleShoot : MonoBehaviour
 
         if (gunAnimator == null)
             gunAnimator = GetComponentInChildren<Animator>();
-
-            for(int i = 0; i < 6; i++)
-            {
-                bulletsInScene.Add(bulletPrefab);
-                Instantiate(fakeBulletPrefab, bulletSocket[i].transform.position, bulletSocket[i].transform.rotation, bulletSocket[i].transform);
-            }
     }
-
     public void PullTheTrigger()
     {
         gunAnimator.SetTrigger("Fire");
     }
 
+
     //This function creates the bullet behavior
-    public void Shoot()
+    void Shoot()
     {
-        if(shootedBullets == totalBullets-1)
+        source.PlayOneShot(sound);
+        if (muzzleFlashPrefab)
         {
-            gunAnimator.SetBool("reload", true);
-            gunAnimator.SetBool("reloaded", false);
-        }
-        if(shootedBullets<totalBullets)
-        {
-            Debug.Log("a");
-            source.PlayOneShot(fireSound);
-            if (muzzleFlashPrefab)
-            {
-            ////Create the muzzle flash
-            //    GameObject tempFlash;
-            //    tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
+            //Create the muzzle flash
+            GameObject tempFlash;
+            tempFlash = Instantiate(muzzleFlashPrefab, barrelLocation.position, barrelLocation.rotation);
 
             //Destroy the muzzle flash effect
-            //Destroy(tempFlash, destroyTimer);
-            }
-
-            //cancels if there's no bullet prefeb
-            if (!bulletPrefab)
-            { return; }
-
-            // Create a bullet and add force on it in direction of the barrel
-            if(!duck.GetComponent<IsDuckConected>().duck)
-            {
-                Instantiate(bulletsInScene[bulletsInSceneInt], barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-                bulletSocket[bulletsInSceneInt].SetActive(false);
-                bulletsInSceneInt++;
-            }
-            else    Instantiate(patitoPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
-            shootedBullets++;
+            Destroy(tempFlash, destroyTimer);
         }
+
+        //cancels if there's no bullet prefeb
+        if (!bulletPrefab)
+        { return; }
+
+        // Create a bullet and add force on it in direction of the barrel
+        Instantiate(bulletPrefab, barrelLocation.position, barrelLocation.rotation).GetComponent<Rigidbody>().AddForce(barrelLocation.forward * shotPower);
+
     }
 
-    public void Reload()
-    {
-        Debug.Log("Reloading");
-    }
     //This function creates a casing at the ejection slot
     void CasingRelease()
     {
