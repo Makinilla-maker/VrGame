@@ -9,6 +9,7 @@ public class ObjectDetection : MonoBehaviour
     public GameObject room;
     public GameObject roomF;
     public Performance performance;
+    public AudioSource radioAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,7 @@ public class ObjectDetection : MonoBehaviour
         GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
         room.transform.position = roomF.transform.position;
         performance.loadAsylum = true;
+        radioAudio.Play();
         //room.SetActive(false);
     }
 }
