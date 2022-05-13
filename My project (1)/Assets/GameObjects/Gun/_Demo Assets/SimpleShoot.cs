@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 [AddComponentMenu("Nokobot/Modern Guns/Simple Shoot")]
 public class SimpleShoot : MonoBehaviour
@@ -16,14 +17,34 @@ public class SimpleShoot : MonoBehaviour
     [SerializeField] private Transform casingExitLocation;
     public AudioSource source;
     public AudioClip sound;
+    public AudioClip reload;
+    public AudioClip noAmmo;
+    private bool hasSlide = true;
     [Header("Settings")]
     [Tooltip("Specify time to destory the casing object")] [SerializeField] private float destroyTimer = 2f;
     [Tooltip("Bullet Speed")] [SerializeField] private float shotPower = 500f;
     [Tooltip("Casing Ejection Speed")] [SerializeField] private float ejectPower = 150f;
-
-
+    public Magazine magazine;
+    public XRBaseInteractor socketInteractor;
+    public void AddMagazine(XRBaseInteractable xrbase)
+    {
+        magazine = xrbase.GetComponent<Magazine>();
+        source.PlayOneShot(reload);
+        hasSlide = false;
+    }
+    public void RemoveMagazine(XRBaseInteractable xrbase)
+    {
+        magazine = null;
+    }
+    public void Slide()
+    {
+        hasSlide = true;
+        source.PlayOneShot(reload);
+    }
     void Start()
     {
+        socketInteractor.onSelectEntered.AddListener(AddMagazine);
+        socketInteractor.onSelectExited.AddListener(RemoveMagazine);
         if (barrelLocation == null)
             barrelLocation = transform;
 
@@ -32,7 +53,15 @@ public class SimpleShoot : MonoBehaviour
     }
     public void PullTheTrigger()
     {
-        gunAnimator.SetTrigger("Fire");
+        if(magazine && magazine.numberOfBullets > 0 && hasSlide)
+        {
+            gunAnimator.SetTrigger("Fire");
+        }
+        else
+        {
+            source.PlayOneShot(noAmmo);
+        }
+        
     }
 
 
