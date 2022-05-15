@@ -21,6 +21,7 @@ public class Key : MonoBehaviour
     private float colorReturnTime = 0.1f;
     private float returnColor;
     public string s;
+    public AudioSource audioSource2;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +79,10 @@ public class Key : MonoBehaviour
             {
                 anim.start = true;
                 anim.audio.Play();
+            }
+            if(audioSource2!= null)
+            {
+                audioSource2.Play();
             }
             if(nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>())
                 nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
