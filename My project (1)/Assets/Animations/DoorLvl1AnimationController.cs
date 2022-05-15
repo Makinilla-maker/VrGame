@@ -13,7 +13,6 @@ public class DoorLvl1AnimationController : MonoBehaviour
     {
         start = false;
         audio = GetComponent<AudioSource>();
-        Debug.Log(this.gameObject.name);
     }
 
     // Update is called once per frame
