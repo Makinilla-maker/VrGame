@@ -27,7 +27,10 @@ public class Key : MonoBehaviour
         s = new string(pas);
         renderer = GetComponent<Renderer>();
         originalColor = renderer.material.color;
-        nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = false;
+        if(nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>())
+            nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = false;
+        else if(nextTeleportationArea.GetComponent<ConfigurableJoint>())
+            nextTeleportationArea.GetComponent<XROffset>().enabled = false;
     }
 
     // Update is called once per frame
@@ -71,9 +74,15 @@ public class Key : MonoBehaviour
             s = new string(l);
             g = 0;
             i = -1;
-            anim.start = true;
-            anim.audio.Play();
-            nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
+            if(anim != null)
+            {
+                anim.start = true;
+                anim.audio.Play();
+            }
+            if(nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>())
+                nextTeleportationArea.GetComponent<UnityEngine.XR.Interaction.Toolkit.TeleportationArea>().enabled = true;
+            else
+                nextTeleportationArea.GetComponent<XROffset>().enabled = true;
             //StartCoroutine(LightEnable());
         }
         else 
