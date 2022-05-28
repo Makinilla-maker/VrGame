@@ -13,6 +13,9 @@ public class Performance : MonoBehaviour
     public GameObject wallToBlockSecondPuzzle;
     public GameObject puzzleSecondRoom;
     public List<GameObject> GameObjectsToDesactivateWhenSecondPuzzle = new List<GameObject>();
+    public List<GameObject> FloorsFirstPuzzle = new List<GameObject>();
+    public List<GameObject> FloorsSecondPuzzle = new List<GameObject>();
+    public List<GameObject> FloorsThirdPuzzle = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,14 @@ public class Performance : MonoBehaviour
         for(int i = 0; i<GameObjectsToDesactivateWhenSecondPuzzle.Count; i++)
         {
             GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(false);
+        }
+        for (int l = 0; l < FloorsFirstPuzzle.Count; l++)
+        {
+            FloorsFirstPuzzle[l].SetActive(false);
+        }
+        for (int k = 0; k < FloorsSecondPuzzle.Count; k++)
+        {
+            FloorsSecondPuzzle[k].SetActive(false);
         }
     }
 
@@ -38,12 +49,20 @@ public class Performance : MonoBehaviour
             {
                 GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(true);
             }
+            for (int l = 0; l < FloorsFirstPuzzle.Count; l++)
+            {
+                FloorsFirstPuzzle[l].SetActive(true);
+            }
             firstRoomLoadOneTime = true;
         }
         if(unLoadFirstPuzzle)
         {
             wallToBlockFirstPuzzle.SetActive(true);
             puzzleFirstRoom.SetActive(false);
+            for(int i = 0; i < FloorsFirstPuzzle.Count; i++)
+            {
+                FloorsFirstPuzzle[i].SetActive(false);
+            }
         }
         if (unLoadSecondPuzzle)
         {
@@ -52,6 +71,10 @@ public class Performance : MonoBehaviour
             for (int i = 0; i < GameObjectsToDesactivateWhenSecondPuzzle.Count; i++)
             {
                 GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(false);
+            }
+            for (int k = 0; k < FloorsSecondPuzzle.Count; k++)
+            {
+                FloorsSecondPuzzle[k].SetActive(false);
             }
         }
     }
