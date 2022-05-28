@@ -30,11 +30,11 @@ public class Performance : MonoBehaviour
         }
         for (int l = 0; l < FloorsFirstPuzzle.Count; l++)
         {
-            FloorsFirstPuzzle[l].SetActive(false);
+            FloorsFirstPuzzle[l].SetActive(true);
         }
         for (int k = 0; k < FloorsSecondPuzzle.Count; k++)
         {
-            FloorsSecondPuzzle[k].SetActive(false);
+            FloorsSecondPuzzle[k].SetActive(true);
         }
     }
 
