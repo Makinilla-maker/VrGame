@@ -2,7 +2,7 @@ Shader "Unlit/MaskSurface"
 {
     Properties
     {
-        _MainTex ("Texture", 2D) = "black" {}
+        _MainTex("Base (RGB)", 2D) = "black" {}
     }
     SubShader
     {
