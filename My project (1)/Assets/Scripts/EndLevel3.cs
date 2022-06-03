@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EndLevel3 : MonoBehaviour
 {
-
+    public Animator altar;
+    public GameObject doorCollider;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,12 +17,15 @@ public class EndLevel3 : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if(collision.transform.name == "M9_Knife" && collision.transform.GetComponent<CapsuleCollider>().enabled)
+        if(collision.transform.name == "M9_Knife")
         {
             Debug.Log("WIN");
+            altar.Play("Scene");
+            //altar.SetBool("activated",true);
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            doorCollider.SetActive(true);
         }
     }
 }
