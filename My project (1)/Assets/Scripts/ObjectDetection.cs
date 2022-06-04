@@ -11,11 +11,11 @@ public class ObjectDetection : MonoBehaviour
     public Performance performance;
     public AudioSource radioAudio;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        roomF.SetActive(false);
     }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -38,7 +38,8 @@ public class ObjectDetection : MonoBehaviour
         //effecto de camera VHS
         //tp a escena
         GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
-        room.transform.position = roomF.transform.position;
+        Destroy(room);
+        roomF.SetActive(true);
         performance.loadAsylum = true;
         radioAudio.Play();
         //room.SetActive(false);

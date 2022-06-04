@@ -6,6 +6,7 @@ public class EndLevel3 : MonoBehaviour
 {
     public Animator altar;
     public GameObject doorCollider;
+    public GameObject finalNote;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,11 @@ public class EndLevel3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (altar.GetCurrentAnimatorStateInfo(0).IsName("Scene"))
+        {
+            Instantiate(finalNote);            
+        }
+
     }
     private void OnTriggerEnter(Collider collision)
     {
@@ -25,7 +30,7 @@ public class EndLevel3 : MonoBehaviour
             altar.Play("Scene");
             //altar.SetBool("activated",true);
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            doorCollider.SetActive(true);
+            Destroy(doorCollider);
         }
     }
 }

@@ -45,14 +45,14 @@ public class BrakeJar : MonoBehaviour
             Destroy(tap.gameObject);
             main.SetActive(false);
             parts.SetActive(true);
-            if (whatsInside.GetComponent<Rigidbody>() != null)
+            if (whatsInside.GetComponent<Rigidbody>() == null)
             {
                 Rigidbody r = whatsInside.AddComponent<Rigidbody>();
                 r.mass = 1;
                 r.collisionDetectionMode = CollisionDetectionMode.Continuous;
             }
             anim.start = true;
-            if (whatsInside.GetComponent<XROffset>()!= null)
+            if (whatsInside.GetComponent<XROffset>() == null)
             {
                 XROffset x = whatsInside.AddComponent<XROffset>();
                 if(whatsInside.name != "iman")

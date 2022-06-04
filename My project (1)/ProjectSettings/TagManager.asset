@@ -23,6 +23,7 @@ TagManager:
   - TriggerForVideo
   - Triggers
   - Estanteria
+  - Ball
   layers:
   - Default
   - TransparentFX

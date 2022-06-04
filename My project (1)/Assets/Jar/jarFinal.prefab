@@ -865,7 +865,6 @@ GameObject:
   - component: {fileID: 1802565786136613399}
   - component: {fileID: 3363023016014192050}
   - component: {fileID: 670804161145465208}
-  - component: {fileID: 2201901181206230523}
   m_Layer: 13
   m_Name: iman
   m_TagString: JarFull
@@ -938,20 +937,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2201901181206230523
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319502621526083757}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4493585093827132993, guid: 43285c89d3d3e5143b129a8ec76ed1dc, type: 3}
 --- !u!1 &1447435860883741046
 GameObject:
   m_ObjectHideFlags: 0
