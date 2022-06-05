@@ -1,22 +1,36 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Reset : MonoBehaviour
 {
-    private bool resetReady;
+    public float timer;
+    public GameObject door;
+    public bool roomActivated;
     // Start is called before the first frame update
     void Start()
     {
-        resetReady = false;
+        timer = 5;
+        roomActivated = false;
+    }
+    void Update()
+    {
+        if(roomActivated)
+        {
+            timer -= Time.deltaTime;
+            if(timer <= 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+        }  
     }
 
     // Update is called once per frame
-    void ResetGame()
+    public void ResetGame()
     {
-        if(resetReady)
-        {
-            //Codigo de reseteo.
-        }
+        Debug.Log("is entered");
+        door.SetActive(true);
+        roomActivated = true;
     }
 }

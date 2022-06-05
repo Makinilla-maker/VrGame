@@ -38,10 +38,9 @@ public class ObjectDetection : MonoBehaviour
         //effecto de camera VHS
         //tp a escena
         GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
-        Destroy(room);
-        roomF.SetActive(true);
         performance.loadAsylum = true;
         radioAudio.Play();
+        Destroy(room);
         //room.SetActive(false);
     }
 }

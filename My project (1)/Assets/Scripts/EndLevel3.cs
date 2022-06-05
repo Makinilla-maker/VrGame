@@ -7,6 +7,8 @@ public class EndLevel3 : MonoBehaviour
     public Animator altar;
     public GameObject doorCollider;
     public GameObject finalNote;
+    
+    public GameObject roomF;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class EndLevel3 : MonoBehaviour
             //altar.SetBool("activated",true);
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             Destroy(doorCollider);
+            roomF.SetActive(true);
         }
     }
 }
