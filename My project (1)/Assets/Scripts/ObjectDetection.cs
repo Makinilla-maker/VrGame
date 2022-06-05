@@ -11,6 +11,7 @@ public class ObjectDetection : MonoBehaviour
     public GameObject roomF;
     public Performance performance;
     public AudioSource radioAudio;
+    public FadeScreen fadeScreen;
     // Start is called before the first frame update
     void Awake()
     {
@@ -36,10 +37,16 @@ public class ObjectDetection : MonoBehaviour
             }
             else
             {
-                SceneManager.LoadScene("SampleScene");
+                StartCoroutine(GoTOScreneRoutine());                
             }
         }
      
+    }
+    IEnumerator GoTOScreneRoutine()
+    {
+        fadeScreen.FadeOut();
+        yield return new WaitForSeconds(fadeScreen.fadeDuration);
+        SceneManager.LoadScene("SampleScene");
     }
     private void OnTriggerStay(Collider other)
     {
