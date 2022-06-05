@@ -7,33 +7,38 @@ public class EndLevel3 : MonoBehaviour
     public Animator altar;
     public GameObject doorCollider;
     public GameObject finalNote;
+    bool finalNoteBool;
     
     public GameObject roomF;
+    bool once;
     // Start is called before the first frame update
     void Start()
     {
-        
+        once = true;
+        finalNoteBool = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (altar.GetCurrentAnimatorStateInfo(0).IsName("Scene"))
+        if (altar.GetCurrentAnimatorStateInfo(0).IsName("Scene") && finalNoteBool)
         {
-            Instantiate(finalNote);            
+            Instantiate(finalNote);
+            finalNoteBool = false;         
         }
 
     }
     private void OnTriggerEnter(Collider collision)
     {
-        if(collision.transform.name == "M9_Knife")
+        if(collision.transform.name == "M9_Knife" && once)
         {
             Debug.Log("WIN");
             altar.Play("Scene");
             //altar.SetBool("activated",true);
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            Destroy(doorCollider);
+            doorCollider.SetActive(false);
             roomF.SetActive(true);
+            once = false;
         }
     }
 }

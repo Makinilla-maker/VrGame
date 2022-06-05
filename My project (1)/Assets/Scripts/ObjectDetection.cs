@@ -29,7 +29,8 @@ public class ObjectDetection : MonoBehaviour
         if(other.gameObject.tag != "Controller")    droppedItemsList.Add(other.gameObject);
         if (other.gameObject.tag == "Tape")
         {
-            if (SceneManager.GetActiveScene().ToString() != "IntroScene")
+            Debug.Log(SceneManager.GetActiveScene().name);
+            if (SceneManager.GetActiveScene().name != "IntroScene")
             {
                 TimeForGo(1);
             }
