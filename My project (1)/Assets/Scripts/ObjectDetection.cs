@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectDetection : MonoBehaviour
 {
@@ -13,7 +14,8 @@ public class ObjectDetection : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        roomF.SetActive(false);
+        if(SceneManager.GetActiveScene().ToString() != "IntroScene")
+            roomF.SetActive(false);
     }
     
     // Update is called once per frame
@@ -25,7 +27,17 @@ public class ObjectDetection : MonoBehaviour
     {
         Debug.Log(other.gameObject.name);
         if(other.gameObject.tag != "Controller")    droppedItemsList.Add(other.gameObject);
-        if(other.gameObject.tag == "Tape")  TimeForGo(1);
+        if (other.gameObject.tag == "Tape")
+        {
+            if (SceneManager.GetActiveScene().ToString() != "IntroScene")
+            {
+                TimeForGo(1);
+            }
+            else
+            {
+                SceneManager.LoadScene("SampleScene");
+            }
+        }
      
     }
     private void OnTriggerStay(Collider other)

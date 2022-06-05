@@ -21,7 +21,7 @@ public class Reset : MonoBehaviour
             timer -= Time.deltaTime;
             if(timer <= 0)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                SceneManager.LoadScene("Credits");
             }
         }  
     }
