@@ -5,7 +5,7 @@ using UnityEngine;
 public class Magnet : MonoBehaviour
 {
     public float forceFactor = 200.0f;
-    public List<Rigidbody> labirynthBall = new List<Rigidbody>();
+    public Rigidbody labirynthBall;
     Transform magnetPoint;
 
     void Start()
@@ -15,22 +15,16 @@ public class Magnet : MonoBehaviour
 
     void FixedUpdate()
     {
-        foreach(Rigidbody ball in labirynthBall)
+        
+    }
+
+
+    void OnTriggerStay(Collider collider)
+    {
+        if(collider.CompareTag("Ball"))
         {
-            ball.AddForce((magnetPoint.position - ball.position) * forceFactor * Time.fixedDeltaTime);
+            labirynthBall.AddForce((magnetPoint.position - labirynthBall.position) * forceFactor);
         }
     }
 
-
-    void OnTriggerEnter(Collider collider)
-    {
-        if(collider.CompareTag("Ball"));
-            labirynthBall.Add(collider.GetComponent<Rigidbody>());
-    }
-
-    void OnTriggerExit(Collider collider)
-    {
-        if(collider.CompareTag("Ball"));
-        labirynthBall.Remove(collider.GetComponent<Rigidbody>());
-    }
 }
