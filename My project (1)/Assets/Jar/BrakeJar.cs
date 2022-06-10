@@ -34,7 +34,6 @@ public class BrakeJar : MonoBehaviour
         if(activate)
         {
             Debug.Log("asda");
-            anim.start = true;
             anim.audio.Play();
         }
     }
@@ -51,7 +50,6 @@ public class BrakeJar : MonoBehaviour
                 r.mass = 1;
                 r.collisionDetectionMode = CollisionDetectionMode.Continuous;
             }
-            anim.start = true;
             if (whatsInside.GetComponent<XROffset>() == null)
             {
                 XROffset x = whatsInside.AddComponent<XROffset>();

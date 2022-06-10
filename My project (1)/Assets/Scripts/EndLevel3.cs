@@ -11,11 +11,13 @@ public class EndLevel3 : MonoBehaviour
     
     public GameObject roomF;
     bool once;
+    public UnityEngine.Video.VideoPlayer video;
     // Start is called before the first frame update
     void Start()
     {
         once = true;
         finalNoteBool = true;
+        video.enabled = false;
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class EndLevel3 : MonoBehaviour
             altar.Play("Scene");
             //altar.SetBool("activated",true);
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            video.enabled = true;
             doorCollider.SetActive(false);
             roomF.SetActive(true);
             once = false;
