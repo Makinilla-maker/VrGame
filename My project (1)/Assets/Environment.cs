@@ -6,6 +6,7 @@ public class Environment : MonoBehaviour
 {
     public AudioClip dinningRoom;
     public AudioClip hallway;
+    public AudioClip surgery;
     public AudioClip dayRoom;
     public AudioSource envionmentSource;
 
@@ -24,6 +25,9 @@ public class Environment : MonoBehaviour
                 envionmentSource.clip = hallway;
                 break;
             case 2:
+                envionmentSource.clip = surgery;
+                break;
+            case 3:
                 envionmentSource.clip = dayRoom;
                 break;
             default:
