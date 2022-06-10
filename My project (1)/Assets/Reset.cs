@@ -8,6 +8,7 @@ public class Reset : MonoBehaviour
     public float timer;
     public GameObject door;
     public bool roomActivated;
+    public GameObject news;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class Reset : MonoBehaviour
             timer -= Time.deltaTime;
             if(timer <= 0)
             {
+                news.SetActive(false);
                 SceneManager.LoadScene("Credits");
             }
         }  
