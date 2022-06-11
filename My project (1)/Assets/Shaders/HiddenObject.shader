@@ -2,7 +2,7 @@ Shader "Unlit/HiddenObject"
 {
     Properties
     {
-        _MainTex ("Base (RGB)", 2D) = "black" {}
+        _MainTex ("Base (RGB)", 2D) = "red" {}
     }
     SubShader
     {
