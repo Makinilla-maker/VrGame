@@ -13,6 +13,7 @@ public class ObjectDetection : MonoBehaviour
     public AudioSource radioAudio;
     public FadeScreen fadeScreen;
     public GameObject news;
+    public Environment audioS;
     // Start is called before the first frame update
     void Awake()
     {
@@ -64,7 +65,8 @@ public class ObjectDetection : MonoBehaviour
         GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
         performance.loadAsylum = true;
         news.SetActive(true);
-        radioAudio.Play();
+        //radioAudio.Play();
+        audioS.SetAudioClip(0);
         Destroy(room);
         //room.SetActive(false);
     }

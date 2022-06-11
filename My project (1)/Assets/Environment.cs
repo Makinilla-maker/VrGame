@@ -9,10 +9,12 @@ public class Environment : MonoBehaviour
     public AudioClip surgery;
     public AudioClip dayRoom;
     public AudioSource envionmentSource;
+    public int temporalState;
 
     public void Reproduce()
     {
         envionmentSource.Play();
+        temporalState = -1;
     }
     public void SetAudioClip(int state)
     {
@@ -33,6 +35,8 @@ public class Environment : MonoBehaviour
             default:
                 break;
         }
-        Reproduce();
+        if(state != temporalState)
+            Reproduce();
+        temporalState = state;
     }
 }

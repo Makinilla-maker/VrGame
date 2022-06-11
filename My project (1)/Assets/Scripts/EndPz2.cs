@@ -5,6 +5,8 @@ using UnityEngine;
 public class EndPz2 : MonoBehaviour
 {
     public DoorLvl1AnimationController anim;
+    public Rigidbody rb;
+    public AudioSource audioS;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +16,16 @@ public class EndPz2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(rb.velocity != Vector3.zero)
+        {
+            audioS.enabled = true;
+            audioS.Play();
+        }
+        else if(rb.velocity == Vector3.zero)
+        {
+            audioS.enabled = false;
+        }
+
     }
     private void OnTriggerEnter(Collider other)
     {
