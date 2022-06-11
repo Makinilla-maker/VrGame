@@ -24,6 +24,7 @@ TagManager:
   - Triggers
   - Estanteria
   - Ball
+  - aaa
   layers:
   - Default
   - TransparentFX
@@ -44,9 +45,9 @@ TagManager:
   - Triggers
   - RHP
   - LHP
-  - 
-  - 
-  - 
+  - TEXTS
+  - See
+  - Mask
   - 
   - 
   - 

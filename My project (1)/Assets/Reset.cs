@@ -22,8 +22,8 @@ public class Reset : MonoBehaviour
             timer -= Time.deltaTime;
             if(timer <= 0)
             {
-                news.SetActive(false);
                 SceneManager.LoadScene("Credits");
+                news.SetActive(false);
             }
         }  
     }
