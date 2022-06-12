@@ -38,7 +38,7 @@ public class ObjectDetection : MonoBehaviour
             Debug.Log(SceneManager.GetActiveScene().name);
             if (SceneManager.GetActiveScene().name != "IntroScene")
             {
-                StartCoroutine(TimeForGo(1));
+                TimeForGo(1);
             }
             else
             {
@@ -58,12 +58,9 @@ public class ObjectDetection : MonoBehaviour
         Debug.Log(other.name);
         if(other.gameObject.tag != "Controller")    other.gameObject.SetActive(false);
     }
-    IEnumerator TimeForGo(int id)
+    public void TimeForGo(int id)
     {
-        fadeScreen.FadeOut();
-        yield return new WaitForSeconds(fadeScreen.fadeDuration);
         GameObject.Find("XRRig").gameObject.transform.position = newPos.position;
-        fadeScreen.FadeIn();
         performance.loadAsylum = true;
         news.SetActive(true);
         //radioAudio.Play();
