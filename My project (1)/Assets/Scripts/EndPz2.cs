@@ -10,6 +10,8 @@ public class EndPz2 : MonoBehaviour
     public Light l1;
     public Light l2;
     public float lI;
+
+    public AudioSource asss;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +26,7 @@ public class EndPz2 : MonoBehaviour
         {
             l1.intensity = Mathf.PingPong(Time.time, 0.1f);
             l2.intensity = Mathf.PingPong(Time.time, 0.1f);
+            asss.Play();
             pz3.SetActive(true);
             StartCoroutine(WaitForMe());
         }

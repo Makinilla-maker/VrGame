@@ -12,6 +12,8 @@ public class EndLevel3 : MonoBehaviour
     public GameObject roomF;
     bool once;
     public UnityEngine.Video.VideoPlayer video;
+    public AudioSource asss;
+    public Light lightS;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,6 +39,8 @@ public class EndLevel3 : MonoBehaviour
         {
             Debug.Log("WIN");
             altar.Play("Scene");
+            asss.Play();
+            lightS.gameObject.SetActive(true);
             //altar.SetBool("activated",true);
             collision.transform.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             video.enabled = true;
