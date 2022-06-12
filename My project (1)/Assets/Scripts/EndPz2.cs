@@ -15,20 +15,22 @@ public class EndPz2 : MonoBehaviour
     {
         anim.start = false;
         lI = l1.intensity;
+        rb.constraints = RigidbodyConstraints.FreezePositionZ;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.name == "End_Pz_2")
         {
-            l1.intensity = lI;
-            l2.intensity = lI;
+            l1.intensity = Mathf.PingPong(Time.time, 0.1f);
+            l2.intensity = Mathf.PingPong(Time.time, 0.1f);
             pz3.SetActive(true);
             StartCoroutine(WaitForMe());
         }
         if (other.name == "Exit")
         {
             gameObject.AddComponent<XROffset>();
+            rb.constraints = RigidbodyConstraints.None;
         }
     }
 

@@ -8,12 +8,15 @@ public class Reset : MonoBehaviour
     public float timer;
     public GameObject door;
     public bool roomActivated;
+    public bool a;
     public GameObject news;
+    public AudioSource ass;
     // Start is called before the first frame update
     void Start()
     {
         timer = 5;
         roomActivated = false;
+        a = true;
     }
     void Update()
     {
@@ -33,6 +36,9 @@ public class Reset : MonoBehaviour
     {
         Debug.Log("is entered");
         door.SetActive(true);
+        if(a)
+            ass.Play();
+        a = false;
         roomActivated = true;
     }
 }
