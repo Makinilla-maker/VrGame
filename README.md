@@ -16,3 +16,6 @@ This is a project for the university career and the team behind this game is TDM
 - [Isaac Digón](https://github.com/isaac553876299?tab=repositories): Art
 - [Magda Ostrowska](https://github.com/magdaostrowska): Code
 - [Oriol Valverde](https://github.com/Makinilla-maker): Code and Design
+
+## Walkthrough (spoilers)
+[Youtube video](https://www.youtube.com/watch?v=5goFigjn-Kw)
