@@ -18,6 +18,7 @@ public class EndLevel3 : MonoBehaviour
         once = true;
         finalNoteBool = true;
         video.enabled = false;
+        finalNote.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class EndLevel3 : MonoBehaviour
     {
         if (altar.GetCurrentAnimatorStateInfo(0).IsName("Scene") && finalNoteBool)
         {
-            Instantiate(finalNote);
+            finalNote.SetActive(true);
             finalNoteBool = false;         
         }
 

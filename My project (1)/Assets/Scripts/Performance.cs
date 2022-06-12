@@ -12,6 +12,7 @@ public class Performance : MonoBehaviour
     public GameObject wallToBlockFirstPuzzle;
     public GameObject wallToBlockSecondPuzzle;
     public GameObject puzzleSecondRoom;
+    public GameObject puzzleThirdRoom;
     public List<GameObject> GameObjectsToDesactivateWhenSecondPuzzle = new List<GameObject>();
     public List<GameObject> FloorsFirstPuzzle = new List<GameObject>();
     public List<GameObject> FloorsSecondPuzzle = new List<GameObject>();
@@ -21,6 +22,7 @@ public class Performance : MonoBehaviour
     {
         puzzleFirstRoom.gameObject.SetActive(false);
         puzzleSecondRoom.gameObject.SetActive(false);
+        puzzleThirdRoom.gameObject.SetActive(false);
         firstRoomLoadOneTime = false;
         wallToBlockFirstPuzzle.SetActive(false);
         wallToBlockSecondPuzzle.SetActive(false);
@@ -68,6 +70,7 @@ public class Performance : MonoBehaviour
         {
             wallToBlockSecondPuzzle.SetActive(true);
             puzzleSecondRoom.SetActive(false);
+            puzzleThirdRoom.SetActive(true);
             for (int i = 0; i < GameObjectsToDesactivateWhenSecondPuzzle.Count; i++)
             {
                 GameObjectsToDesactivateWhenSecondPuzzle[i].SetActive(false);
