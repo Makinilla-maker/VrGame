@@ -1466,6 +1466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   steps: {fileID: 0}
+  XRrig: {fileID: 0}
+  comprovar: {x: 0, y: 0, z: 0}
 --- !u!1 &4579081900531641933
 GameObject:
   m_ObjectHideFlags: 0
