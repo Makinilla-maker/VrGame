@@ -10,7 +10,7 @@ public class EndPz2 : MonoBehaviour
     public Light l1;
     public Light l2;
     public float lI;
-
+    private XROffset k;
     public AudioSource asss;
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,8 @@ public class EndPz2 : MonoBehaviour
         anim.start = false;
         lI = l1.intensity;
         rb.constraints = RigidbodyConstraints.FreezePositionZ;
+        k = GetComponent<XROffset>();
+        k.enabled = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,6 +35,8 @@ public class EndPz2 : MonoBehaviour
         if (other.name == "Exit")
         {
             gameObject.AddComponent<XROffset>();
+            k = GetComponent<XROffset>();
+            k.enabled=true;
             rb.constraints = RigidbodyConstraints.None;
         }
     }
