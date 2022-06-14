@@ -10,7 +10,6 @@ public class BrakeJar : MonoBehaviour
     public GameObject main;
     public GameObject tap;
     public GameObject whatsInside;
-    public GameObject whatsOutside;
     public DoorLvl1AnimationController anim;
     public bool activate;
     // Start is called before the first frame update
@@ -45,7 +44,6 @@ public class BrakeJar : MonoBehaviour
             Destroy(tap.gameObject);
             main.SetActive(false);
             parts.SetActive(true);
-            whatsOutside.SetActive(false);
             if (whatsInside.GetComponent<Rigidbody>() == null)
             {
                 Rigidbody r = whatsInside.AddComponent<Rigidbody>();

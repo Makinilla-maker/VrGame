@@ -45,5 +45,6 @@ public class AudioManager : MonoBehaviour
         {
             if(s.prebab != null)    Instantiate(s.prebab,s.prebab.transform.position,s.prebab.transform.rotation);
         }
+        
     }
 }
