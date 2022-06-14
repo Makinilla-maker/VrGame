@@ -27,7 +27,6 @@ public class BrakeJar : MonoBehaviour
         //     child.GetComponent<MeshCollider>().enabled = false;
         // }
         parts.SetActive(false);
-        whatsOutside = transform.GetChild(4).gameObject;
     }
 
     // Update is called once per frame
